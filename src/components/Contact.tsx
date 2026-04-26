@@ -73,7 +73,7 @@ export default function Contact() {
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {/* Phone card */}
           <a
-            href="tel:+15015550100"
+            href="tel:+18708830599"
             className="group flex flex-col items-center justify-center gap-4 p-10 text-center transition-all duration-200"
             style={{
               border: "1px solid rgba(59,174,174,0.25)",
@@ -113,7 +113,6 @@ export default function Contact() {
               >
                 Call or Text
               </div>
-              {/* PLACEHOLDER — replace with real phone number */}
               <div
                 style={{
                   fontFamily: "var(--font-oswald)",
@@ -123,7 +122,7 @@ export default function Contact() {
                   letterSpacing: "0.06em",
                 }}
               >
-                (501) 555-0100
+                (870) 883-0599
               </div>
               <div
                 className="mt-1 text-xs"
@@ -133,7 +132,6 @@ export default function Contact() {
                   fontStyle: "italic",
                 }}
               >
-                {/* dev note: replace above number with real phone */}
                 Available Mon–Sat
               </div>
             </div>

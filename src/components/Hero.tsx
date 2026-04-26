@@ -134,7 +134,7 @@ export default function Hero() {
               >
                 <PhoneIcon />
                 {/* PLACEHOLDER — replace with real number */}
-                CALL (501) 555-0100
+                CALL (870) 883-0599
               </a>
               <a
                 href="#services"
