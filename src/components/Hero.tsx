@@ -16,7 +16,7 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage:
-            "radial-gradient(circle, rgba(59,174,174,0.08) 1px, transparent 1px)",
+            "radial-gradient(circle, rgba(47,111,149,0.08) 1px, transparent 1px)",
           backgroundSize: "32px 32px",
         }}
       />
@@ -27,7 +27,7 @@ export default function Hero() {
         style={{
           width: "42%",
           background:
-            "linear-gradient(135deg, transparent 45%, rgba(59,174,174,0.06) 45%)",
+            "linear-gradient(135deg, transparent 45%, rgba(47,111,149,0.06) 45%)",
         }}
       />
 
@@ -37,8 +37,8 @@ export default function Hero() {
           style={{
             width: 40,
             height: 40,
-            borderTop: "2px solid rgba(59,174,174,0.5)",
-            borderLeft: "2px solid rgba(59,174,174,0.5)",
+            borderTop: "2px solid rgba(47,111,149,0.5)",
+            borderLeft: "2px solid rgba(47,111,149,0.5)",
           }}
         />
       </div>
@@ -48,8 +48,8 @@ export default function Hero() {
           style={{
             width: 40,
             height: 40,
-            borderBottom: "2px solid rgba(59,174,174,0.5)",
-            borderRight: "2px solid rgba(59,174,174,0.5)",
+            borderBottom: "2px solid rgba(47,111,149,0.5)",
+            borderRight: "2px solid rgba(47,111,149,0.5)",
           }}
         />
       </div>
@@ -60,18 +60,18 @@ export default function Hero() {
           <div className="flex-1 text-center lg:text-left">
             {/* Eyebrow */}
             <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
-              <div style={{ width: 32, height: 1, background: "#3BAEAE" }} />
+              <div style={{ width: 32, height: 1, background: "#2F6F95" }} />
               <span
                 className="text-xs tracking-widest uppercase"
                 style={{
                   fontFamily: "var(--font-oswald)",
-                  color: "#3BAEAE",
+                  color: "#2F6F95",
                   letterSpacing: "0.3em",
                 }}
               >
                 Benton, Arkansas
               </span>
-              <div style={{ width: 32, height: 1, background: "#3BAEAE" }} />
+              <div style={{ width: 32, height: 1, background: "#2F6F95" }} />
             </div>
 
             {/* Headline */}
@@ -87,7 +87,7 @@ export default function Hero() {
             >
               BUILT ON
               <br />
-              <span style={{ color: "#3BAEAE" }}>SOLID</span>
+              <span style={{ color: "#2F6F95" }}>SOLID</span>
               <br />
               GROUND
             </h1>
@@ -116,20 +116,20 @@ export default function Hero() {
                   fontFamily: "var(--font-oswald)",
                   letterSpacing: "0.12em",
                   fontSize: "0.95rem",
-                  background: "#3BAEAE",
+                  background: "#2F6F95",
                   color: "#0D1B2A",
                   borderRadius: "2px",
-                  boxShadow: "0 4px 24px rgba(59,174,174,0.3)",
+                  boxShadow: "0 4px 24px rgba(47,111,149,0.3)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "#2A8888";
+                  e.currentTarget.style.background = "#245978";
                   e.currentTarget.style.boxShadow =
-                    "0 4px 32px rgba(59,174,174,0.45)";
+                    "0 4px 32px rgba(47,111,149,0.45)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "#3BAEAE";
+                  e.currentTarget.style.background = "#2F6F95";
                   e.currentTarget.style.boxShadow =
-                    "0 4px 24px rgba(59,174,174,0.3)";
+                    "0 4px 24px rgba(47,111,149,0.3)";
                 }}
               >
                 <PhoneIcon />
@@ -149,8 +149,8 @@ export default function Hero() {
                   borderRadius: "2px",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "#3BAEAE";
-                  e.currentTarget.style.color = "#3BAEAE";
+                  e.currentTarget.style.borderColor = "#2F6F95";
+                  e.currentTarget.style.color = "#2F6F95";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = "rgba(244,239,230,0.3)";
@@ -165,7 +165,7 @@ export default function Hero() {
             {/* Trust bar */}
             <div
               className="mt-10 pt-8 flex flex-wrap items-center gap-6 justify-center lg:justify-start"
-              style={{ borderTop: "1px solid rgba(59,174,174,0.2)" }}
+              style={{ borderTop: "1px solid rgba(47,111,149,0.2)" }}
             >
               {[
                 { num: "Est.", sub: "2026" },
@@ -179,7 +179,7 @@ export default function Hero() {
                       fontFamily: "var(--font-oswald)",
                       fontSize: "1.5rem",
                       fontWeight: 700,
-                      color: "#3BAEAE",
+                      color: "#2F6F95",
                     }}
                   >
                     {item.num}
@@ -207,7 +207,7 @@ export default function Hero() {
                 className="absolute inset-0 rounded-full"
                 style={{
                   background:
-                    "radial-gradient(circle, rgba(59,174,174,0.15) 0%, transparent 70%)",
+                    "radial-gradient(circle, rgba(47,111,149,0.15) 0%, transparent 70%)",
                   transform: "scale(1.5)",
                 }}
               />
@@ -220,7 +220,7 @@ export default function Hero() {
                 style={{
                   width: "clamp(200px, 28vw, 300px)",
                   height: "auto",
-                  filter: "drop-shadow(0 0 40px rgba(59,174,174,0.2))",
+                  filter: "drop-shadow(0 0 40px rgba(47,111,149,0.2))",
                 }}
                 priority
               />
@@ -242,13 +242,13 @@ export default function Hero() {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
         <span
           className="text-xs tracking-widest uppercase"
-          style={{ fontFamily: "var(--font-oswald)", color: "rgba(59,174,174,0.6)", letterSpacing: "0.2em" }}
+          style={{ fontFamily: "var(--font-oswald)", color: "rgba(47,111,149,0.6)", letterSpacing: "0.2em" }}
         >
           scroll
         </span>
         <svg width="14" height="20" viewBox="0 0 14 20" fill="none">
-          <rect x="5" y="1" width="4" height="8" rx="2" stroke="rgba(59,174,174,0.6)" strokeWidth="1.5" />
-          <path d="M7 10v7M4 14l3 3 3-3" stroke="rgba(59,174,174,0.6)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <rect x="5" y="1" width="4" height="8" rx="2" stroke="rgba(47,111,149,0.6)" strokeWidth="1.5" />
+          <path d="M7 10v7M4 14l3 3 3-3" stroke="rgba(47,111,149,0.6)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
     </section>

@@ -55,7 +55,7 @@ export default function WhyUs() {
       {/* Top border accent */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: "linear-gradient(to right, transparent, #3BAEAE, transparent)" }}
+        style={{ background: "linear-gradient(to right, transparent, #2F6F95, transparent)" }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,7 +66,7 @@ export default function WhyUs() {
               className="inline-block mb-4 text-xs tracking-widest uppercase"
               style={{
                 fontFamily: "var(--font-oswald)",
-                color: "#3BAEAE",
+                color: "#2F6F95",
                 letterSpacing: "0.3em",
               }}
             >
@@ -84,11 +84,11 @@ export default function WhyUs() {
             >
               THE DIFFERENCE
               <br />
-              <span style={{ color: "#3BAEAE" }}>IS SIMPLE</span>
+              <span style={{ color: "#2F6F95" }}>IS SIMPLE</span>
             </h2>
             <div
               className="mb-6"
-              style={{ width: 48, height: 2, background: "#3BAEAE" }}
+              style={{ width: 48, height: 2, background: "#2F6F95" }}
             />
             <p
               className="mb-8"
@@ -110,15 +110,15 @@ export default function WhyUs() {
               style={{
                 fontFamily: "var(--font-oswald)",
                 letterSpacing: "0.12em",
-                background: "#3BAEAE",
+                background: "#2F6F95",
                 color: "#0D1B2A",
                 borderRadius: "2px",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = "#2A8888";
+                e.currentTarget.style.background = "#245978";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = "#3BAEAE";
+                e.currentTarget.style.background = "#2F6F95";
               }}
             >
               GET A FREE ESTIMATE
@@ -132,7 +132,7 @@ export default function WhyUs() {
                 key={pillar.number}
                 className="flex gap-6 p-6 transition-all duration-200"
                 style={{
-                  border: "1px solid rgba(59,174,174,0.15)",
+                  border: "1px solid rgba(47,111,149,0.15)",
                   borderRadius: "2px",
                   background: "rgba(13,27,42,0.5)",
                 }}
@@ -142,8 +142,8 @@ export default function WhyUs() {
                   <div
                     className="flex items-center justify-center w-10 h-10"
                     style={{
-                      background: "rgba(59,174,174,0.1)",
-                      color: "#3BAEAE",
+                      background: "rgba(47,111,149,0.1)",
+                      color: "#2F6F95",
                       borderRadius: "2px",
                     }}
                   >
@@ -153,7 +153,7 @@ export default function WhyUs() {
                     style={{
                       fontFamily: "var(--font-oswald)",
                       fontSize: "0.7rem",
-                      color: "rgba(59,174,174,0.5)",
+                      color: "rgba(47,111,149,0.5)",
                       letterSpacing: "0.1em",
                     }}
                   >

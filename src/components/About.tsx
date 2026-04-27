@@ -10,7 +10,7 @@ export default function About() {
       {/* Top border accent */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: "linear-gradient(to right, transparent, #3BAEAE, transparent)" }}
+        style={{ background: "linear-gradient(to right, transparent, #2F6F95, transparent)" }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +22,7 @@ export default function About() {
               <div
                 className="absolute -bottom-4 -right-4 w-full h-full"
                 style={{
-                  border: "2px solid rgba(59,174,174,0.2)",
+                  border: "2px solid rgba(47,111,149,0.2)",
                   borderRadius: "2px",
                 }}
               />
@@ -30,7 +30,7 @@ export default function About() {
                 className="relative flex items-center justify-center p-12"
                 style={{
                   background: "rgba(22,37,57,0.8)",
-                  border: "1px solid rgba(59,174,174,0.15)",
+                  border: "1px solid rgba(47,111,149,0.15)",
                   borderRadius: "2px",
                 }}
               >
@@ -51,7 +51,7 @@ export default function About() {
               className="inline-block mb-4 text-xs tracking-widest uppercase"
               style={{
                 fontFamily: "var(--font-oswald)",
-                color: "#3BAEAE",
+                color: "#2F6F95",
                 letterSpacing: "0.3em",
               }}
             >
@@ -69,11 +69,11 @@ export default function About() {
             >
               MEET
               <br />
-              <span style={{ color: "#3BAEAE" }}>CHASE MALONE</span>
+              <span style={{ color: "#2F6F95" }}>CHASE MALONE</span>
             </h2>
             <div
               className="mb-8"
-              style={{ width: 48, height: 2, background: "#3BAEAE" }}
+              style={{ width: 48, height: 2, background: "#2F6F95" }}
             />
 
             <div
@@ -119,7 +119,7 @@ export default function About() {
                   key={fact.label}
                   className="p-4"
                   style={{
-                    border: "1px solid rgba(59,174,174,0.15)",
+                    border: "1px solid rgba(47,111,149,0.15)",
                     borderRadius: "2px",
                     background: "rgba(13,27,42,0.4)",
                   }}
@@ -128,7 +128,7 @@ export default function About() {
                     className="text-xs uppercase tracking-widest mb-1"
                     style={{
                       fontFamily: "var(--font-oswald)",
-                      color: "rgba(59,174,174,0.7)",
+                      color: "rgba(47,111,149,0.7)",
                       letterSpacing: "0.2em",
                       fontSize: "0.65rem",
                     }}

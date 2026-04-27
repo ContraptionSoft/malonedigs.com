@@ -12,7 +12,7 @@ export default function Contact() {
       {/* Top border accent */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: "linear-gradient(to right, transparent, #3BAEAE, transparent)" }}
+        style={{ background: "linear-gradient(to right, transparent, #2F6F95, transparent)" }}
       />
 
       {/* Background dot grid */}
@@ -20,7 +20,7 @@ export default function Contact() {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage:
-            "radial-gradient(circle, rgba(59,174,174,0.06) 1px, transparent 1px)",
+            "radial-gradient(circle, rgba(47,111,149,0.06) 1px, transparent 1px)",
           backgroundSize: "28px 28px",
         }}
       />
@@ -32,7 +32,7 @@ export default function Contact() {
             className="inline-block mb-4 text-xs tracking-widest uppercase"
             style={{
               fontFamily: "var(--font-oswald)",
-              color: "#3BAEAE",
+              color: "#2F6F95",
               letterSpacing: "0.3em",
             }}
           >
@@ -52,7 +52,7 @@ export default function Contact() {
           </h2>
           <div
             className="mx-auto mb-6"
-            style={{ width: 48, height: 2, background: "#3BAEAE" }}
+            style={{ width: 48, height: 2, background: "#2F6F95" }}
           />
           <p
             className="max-w-xl mx-auto"
@@ -76,24 +76,24 @@ export default function Contact() {
             href="tel:+18708830599"
             className="group flex flex-col items-center justify-center gap-4 p-10 text-center transition-all duration-200"
             style={{
-              border: "1px solid rgba(59,174,174,0.25)",
+              border: "1px solid rgba(47,111,149,0.25)",
               borderRadius: "2px",
               background: "rgba(22,37,57,0.6)",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(59,174,174,0.6)";
+              e.currentTarget.style.borderColor = "rgba(47,111,149,0.6)";
               e.currentTarget.style.background = "rgba(22,37,57,0.9)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "rgba(59,174,174,0.25)";
+              e.currentTarget.style.borderColor = "rgba(47,111,149,0.25)";
               e.currentTarget.style.background = "rgba(22,37,57,0.6)";
             }}
           >
             <div
               className="flex items-center justify-center w-14 h-14"
               style={{
-                background: "rgba(59,174,174,0.12)",
-                color: "#3BAEAE",
+                background: "rgba(47,111,149,0.12)",
+                color: "#2F6F95",
                 borderRadius: "2px",
               }}
             >
@@ -106,7 +106,7 @@ export default function Contact() {
                 className="mb-1 text-xs uppercase tracking-widest"
                 style={{
                   fontFamily: "var(--font-oswald)",
-                  color: "rgba(59,174,174,0.7)",
+                  color: "rgba(47,111,149,0.7)",
                   letterSpacing: "0.2em",
                   fontSize: "0.65rem",
                 }}
@@ -142,24 +142,24 @@ export default function Contact() {
             href="mailto:chase@malonedigs.com"
             className="group flex flex-col items-center justify-center gap-4 p-10 text-center transition-all duration-200"
             style={{
-              border: "1px solid rgba(59,174,174,0.25)",
+              border: "1px solid rgba(47,111,149,0.25)",
               borderRadius: "2px",
               background: "rgba(22,37,57,0.6)",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(59,174,174,0.6)";
+              e.currentTarget.style.borderColor = "rgba(47,111,149,0.6)";
               e.currentTarget.style.background = "rgba(22,37,57,0.9)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "rgba(59,174,174,0.25)";
+              e.currentTarget.style.borderColor = "rgba(47,111,149,0.25)";
               e.currentTarget.style.background = "rgba(22,37,57,0.6)";
             }}
           >
             <div
               className="flex items-center justify-center w-14 h-14"
               style={{
-                background: "rgba(59,174,174,0.12)",
-                color: "#3BAEAE",
+                background: "rgba(47,111,149,0.12)",
+                color: "#2F6F95",
                 borderRadius: "2px",
               }}
             >
@@ -173,7 +173,7 @@ export default function Contact() {
                 className="mb-1 text-xs uppercase tracking-widest"
                 style={{
                   fontFamily: "var(--font-oswald)",
-                  color: "rgba(59,174,174,0.7)",
+                  color: "rgba(47,111,149,0.7)",
                   letterSpacing: "0.2em",
                   fontSize: "0.65rem",
                 }}
@@ -211,7 +211,7 @@ export default function Contact() {
         <div
           className="flex items-start gap-4 p-6"
           style={{
-            border: "1px solid rgba(59,174,174,0.12)",
+            border: "1px solid rgba(47,111,149,0.12)",
             borderRadius: "2px",
             background: "rgba(13,27,42,0.5)",
           }}
@@ -219,8 +219,8 @@ export default function Contact() {
           <div
             className="shrink-0 flex items-center justify-center w-10 h-10 mt-0.5"
             style={{
-              background: "rgba(59,174,174,0.1)",
-              color: "#3BAEAE",
+              background: "rgba(47,111,149,0.1)",
+              color: "#2F6F95",
               borderRadius: "2px",
             }}
           >

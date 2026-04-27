@@ -28,7 +28,7 @@ export default function Footer() {
       className="relative"
       style={{
         background: "#060F18",
-        borderTop: "1px solid rgba(59,174,174,0.15)",
+        borderTop: "1px solid rgba(47,111,149,0.15)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -62,7 +62,7 @@ export default function Footer() {
                     fontWeight: 400,
                     fontSize: "0.6rem",
                     letterSpacing: "0.3em",
-                    color: "#3BAEAE",
+                    color: "#2F6F95",
                     lineHeight: 1,
                     marginTop: 2,
                   }}
@@ -88,8 +88,8 @@ export default function Footer() {
                 style={{
                   fontFamily: "var(--font-oswald)",
                   letterSpacing: "0.15em",
-                  color: "#3BAEAE",
-                  border: "1px solid rgba(59,174,174,0.3)",
+                  color: "#2F6F95",
+                  border: "1px solid rgba(47,111,149,0.3)",
                   borderRadius: "1px",
                   fontSize: "0.6rem",
                 }}
@@ -101,8 +101,8 @@ export default function Footer() {
                 style={{
                   fontFamily: "var(--font-oswald)",
                   letterSpacing: "0.15em",
-                  color: "#3BAEAE",
-                  border: "1px solid rgba(59,174,174,0.3)",
+                  color: "#2F6F95",
+                  border: "1px solid rgba(47,111,149,0.3)",
                   borderRadius: "1px",
                   fontSize: "0.6rem",
                 }}
@@ -138,7 +138,7 @@ export default function Footer() {
                       color: "#556070",
                     }}
                     onMouseEnter={(e) =>
-                      (e.currentTarget.style.color = "#3BAEAE")
+                      (e.currentTarget.style.color = "#2F6F95")
                     }
                     onMouseLeave={(e) =>
                       (e.currentTarget.style.color = "#556070")
@@ -177,7 +177,7 @@ export default function Footer() {
                       color: "#556070",
                     }}
                     onMouseEnter={(e) =>
-                      (e.currentTarget.style.color = "#3BAEAE")
+                      (e.currentTarget.style.color = "#2F6F95")
                     }
                     onMouseLeave={(e) =>
                       (e.currentTarget.style.color = "#556070")
@@ -212,7 +212,7 @@ export default function Footer() {
                   className="text-xs mb-0.5"
                   style={{
                     fontFamily: "var(--font-oswald)",
-                    color: "rgba(59,174,174,0.6)",
+                    color: "rgba(47,111,149,0.6)",
                     letterSpacing: "0.2em",
                     fontSize: "0.6rem",
                     textTransform: "uppercase",
@@ -240,7 +240,7 @@ export default function Footer() {
                   className="text-xs mb-0.5"
                   style={{
                     fontFamily: "var(--font-oswald)",
-                    color: "rgba(59,174,174,0.6)",
+                    color: "rgba(47,111,149,0.6)",
                     letterSpacing: "0.2em",
                     fontSize: "0.6rem",
                     textTransform: "uppercase",
@@ -256,7 +256,7 @@ export default function Footer() {
                     color: "#8FA0AD",
                   }}
                   onMouseEnter={(e) =>
-                    (e.currentTarget.style.color = "#3BAEAE")
+                    (e.currentTarget.style.color = "#2F6F95")
                   }
                   onMouseLeave={(e) =>
                     (e.currentTarget.style.color = "#8FA0AD")
@@ -273,7 +273,7 @@ export default function Footer() {
                   className="text-xs mb-0.5"
                   style={{
                     fontFamily: "var(--font-oswald)",
-                    color: "rgba(59,174,174,0.6)",
+                    color: "rgba(47,111,149,0.6)",
                     letterSpacing: "0.2em",
                     fontSize: "0.6rem",
                     textTransform: "uppercase",

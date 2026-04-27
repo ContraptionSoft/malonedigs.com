@@ -54,7 +54,7 @@ export default function Header() {
                   fontSize: "0.7rem",
                   fontWeight: 400,
                   letterSpacing: "0.25em",
-                  color: "#3BAEAE",
+                  color: "#2F6F95",
                 }}
               >
                 EXCAVATION
@@ -76,7 +76,7 @@ export default function Header() {
                   color: "#D6D0C4",
                 }}
                 onMouseEnter={(e) =>
-                  (e.currentTarget.style.color = "#3BAEAE")
+                  (e.currentTarget.style.color = "#2F6F95")
                 }
                 onMouseLeave={(e) =>
                   (e.currentTarget.style.color = "#D6D0C4")
@@ -91,15 +91,15 @@ export default function Header() {
               style={{
                 fontFamily: "var(--font-oswald)",
                 letterSpacing: "0.1em",
-                background: "#3BAEAE",
+                background: "#2F6F95",
                 color: "#0D1B2A",
                 borderRadius: "2px",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = "#2A8888";
+                e.currentTarget.style.background = "#245978";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = "#3BAEAE";
+                e.currentTarget.style.background = "#2F6F95";
               }}
             >
               GET AN ESTIMATE
@@ -115,21 +115,21 @@ export default function Header() {
             <span
               className="block w-6 h-0.5 transition-all duration-200"
               style={{
-                background: "#3BAEAE",
+                background: "#2F6F95",
                 transform: open ? "rotate(45deg) translate(3px, 3px)" : "none",
               }}
             />
             <span
               className="block w-6 h-0.5 transition-all duration-200"
               style={{
-                background: "#3BAEAE",
+                background: "#2F6F95",
                 opacity: open ? 0 : 1,
               }}
             />
             <span
               className="block w-6 h-0.5 transition-all duration-200"
               style={{
-                background: "#3BAEAE",
+                background: "#2F6F95",
                 transform: open
                   ? "rotate(-45deg) translate(3px, -3px)"
                   : "none",
@@ -169,7 +169,7 @@ export default function Header() {
               style={{
                 fontFamily: "var(--font-oswald)",
                 letterSpacing: "0.12em",
-                background: "#3BAEAE",
+                background: "#2F6F95",
                 color: "#0D1B2A",
                 borderRadius: "2px",
               }}

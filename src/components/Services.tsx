@@ -113,7 +113,7 @@ export default function Services() {
       {/* Top border accent */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: "linear-gradient(to right, transparent, #3BAEAE, transparent)" }}
+        style={{ background: "linear-gradient(to right, transparent, #2F6F95, transparent)" }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -123,7 +123,7 @@ export default function Services() {
             className="inline-block mb-4 text-xs tracking-widest uppercase"
             style={{
               fontFamily: "var(--font-oswald)",
-              color: "#3BAEAE",
+              color: "#2F6F95",
               letterSpacing: "0.3em",
             }}
           >
@@ -143,7 +143,7 @@ export default function Services() {
           </h2>
           <div
             className="mx-auto mb-6"
-            style={{ width: 64, height: 2, background: "#3BAEAE" }}
+            style={{ width: 64, height: 2, background: "#2F6F95" }}
           />
           <p
             className="max-w-2xl mx-auto"
@@ -161,7 +161,7 @@ export default function Services() {
 
         {/* Services grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-          style={{ background: "rgba(59,174,174,0.12)", border: "1px solid rgba(59,174,174,0.12)" }}>
+          style={{ background: "rgba(47,111,149,0.12)", border: "1px solid rgba(47,111,149,0.12)" }}>
           {services.map((service) => (
             <div
               key={service.title}
@@ -178,8 +178,8 @@ export default function Services() {
               <div
                 className="mb-5 inline-flex items-center justify-center w-12 h-12 transition-all duration-300"
                 style={{
-                  color: "#3BAEAE",
-                  background: "rgba(59,174,174,0.1)",
+                  color: "#2F6F95",
+                  background: "rgba(47,111,149,0.1)",
                   borderRadius: "2px",
                 }}
               >
@@ -227,7 +227,7 @@ export default function Services() {
             Not seeing exactly what you need?{" "}
             <a
               href="#contact"
-              style={{ color: "#3BAEAE", borderBottom: "1px solid rgba(59,174,174,0.4)" }}
+              style={{ color: "#2F6F95", borderBottom: "1px solid rgba(47,111,149,0.4)" }}
             >
               Give us a call — if it involves a machine and dirt, we&apos;ve probably done it.
             </a>
