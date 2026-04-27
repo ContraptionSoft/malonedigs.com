@@ -9,25 +9,13 @@ export default function Contact() {
         background: "linear-gradient(160deg, #0D1B2A 0%, #0A2234 50%, #0D1B2A 100%)",
       }}
     >
-      {/* Top border accent */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
         style={{ background: "linear-gradient(to right, transparent, #2F6F95, transparent)" }}
       />
 
-      {/* Background dot grid */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, rgba(47,111,149,0.06) 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
-        }}
-      />
-
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <span
             className="inline-block mb-4 text-xs tracking-widest uppercase"
             style={{
@@ -36,7 +24,7 @@ export default function Contact() {
               letterSpacing: "0.3em",
             }}
           >
-            Let&apos;s Talk
+            Get in Touch
           </span>
           <h2
             className="mb-4 leading-none"
@@ -48,7 +36,7 @@ export default function Contact() {
               letterSpacing: "0.03em",
             }}
           >
-            GET AN ESTIMATE
+            CALL OR TEXT
           </h2>
           <div
             className="mx-auto mb-6"
@@ -63,15 +51,11 @@ export default function Contact() {
               lineHeight: 1.7,
             }}
           >
-            The fastest way to get a quote is a phone call or a text. Tell us
-            where the job is, what you&apos;re trying to do, and we&apos;ll give
-            you a straight answer.
+            Best way to reach Chase is by phone.
           </p>
         </div>
 
-        {/* Contact cards */}
-        <div className="grid sm:grid-cols-2 gap-6 mb-12">
-          {/* Phone card */}
+        <div className="max-w-2xl mx-auto">
           <a
             href="tel:+18708830599"
             className="group flex flex-col items-center justify-center gap-4 p-10 text-center transition-all duration-200"
@@ -111,148 +95,67 @@ export default function Contact() {
                   fontSize: "0.65rem",
                 }}
               >
-                Call or Text
+                Phone
               </div>
               <div
                 style={{
                   fontFamily: "var(--font-oswald)",
                   fontWeight: 700,
-                  fontSize: "1.5rem",
+                  fontSize: "1.7rem",
                   color: "#FFFFFF",
                   letterSpacing: "0.06em",
                 }}
               >
                 (870) 883-0599
               </div>
-              <div
-                className="mt-1 text-xs"
-                style={{
-                  fontFamily: "var(--font-source-sans)",
-                  color: "rgba(244,239,230,0.4)",
-                  fontStyle: "italic",
-                }}
-              >
-                Available Mon–Sat
-              </div>
             </div>
           </a>
 
-          {/* Email card */}
-          <a
-            href="mailto:chase@malonedigs.com"
-            className="group flex flex-col items-center justify-center gap-4 p-10 text-center transition-all duration-200"
+          <div
+            className="mt-6 flex items-start gap-4 p-6"
             style={{
-              border: "1px solid rgba(47,111,149,0.25)",
+              border: "1px solid rgba(47,111,149,0.12)",
               borderRadius: "2px",
-              background: "rgba(22,37,57,0.6)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(47,111,149,0.6)";
-              e.currentTarget.style.background = "rgba(22,37,57,0.9)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "rgba(47,111,149,0.25)";
-              e.currentTarget.style.background = "rgba(22,37,57,0.6)";
+              background: "rgba(13,27,42,0.5)",
             }}
           >
             <div
-              className="flex items-center justify-center w-14 h-14"
+              className="shrink-0 flex items-center justify-center w-10 h-10 mt-0.5"
               style={{
-                background: "rgba(47,111,149,0.12)",
+                background: "rgba(47,111,149,0.1)",
                 color: "#2F6F95",
                 borderRadius: "2px",
               }}
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
               </svg>
             </div>
             <div>
               <div
-                className="mb-1 text-xs uppercase tracking-widest"
-                style={{
-                  fontFamily: "var(--font-oswald)",
-                  color: "rgba(47,111,149,0.7)",
-                  letterSpacing: "0.2em",
-                  fontSize: "0.65rem",
-                }}
-              >
-                Email
-              </div>
-              {/* PLACEHOLDER — replace with real email if different */}
-              <div
+                className="mb-1"
                 style={{
                   fontFamily: "var(--font-oswald)",
                   fontWeight: 600,
-                  fontSize: "1.2rem",
+                  fontSize: "0.9rem",
+                  letterSpacing: "0.08em",
                   color: "#FFFFFF",
-                  letterSpacing: "0.04em",
-                  wordBreak: "break-all",
                 }}
               >
-                chase@malonedigs.com
+                Benton, Arkansas
               </div>
-              <div
-                className="mt-1 text-xs"
+              <p
                 style={{
                   fontFamily: "var(--font-source-sans)",
-                  color: "rgba(244,239,230,0.4)",
-                  fontStyle: "italic",
+                  fontSize: "0.9rem",
+                  color: "#6B8090",
+                  lineHeight: 1.6,
                 }}
               >
-                We&apos;ll reply within 24 hours
-              </div>
+                Works anywhere in Arkansas.
+              </p>
             </div>
-          </a>
-        </div>
-
-        {/* Location note */}
-        <div
-          className="flex items-start gap-4 p-6"
-          style={{
-            border: "1px solid rgba(47,111,149,0.12)",
-            borderRadius: "2px",
-            background: "rgba(13,27,42,0.5)",
-          }}
-        >
-          <div
-            className="shrink-0 flex items-center justify-center w-10 h-10 mt-0.5"
-            style={{
-              background: "rgba(47,111,149,0.1)",
-              color: "#2F6F95",
-              borderRadius: "2px",
-            }}
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-          </div>
-          <div>
-            <div
-              className="mb-1"
-              style={{
-                fontFamily: "var(--font-oswald)",
-                fontWeight: 600,
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-                color: "#FFFFFF",
-              }}
-            >
-              Benton, Arkansas — Serving the Whole State
-            </div>
-            <p
-              style={{
-                fontFamily: "var(--font-source-sans)",
-                fontSize: "0.9rem",
-                color: "#6B8090",
-                lineHeight: 1.6,
-              }}
-            >
-              We&apos;re based in Benton and work primarily throughout Central Arkansas, but we travel for the right job.
-              If you&apos;re not sure whether we cover your area, just ask — the answer is probably yes.
-            </p>
           </div>
         </div>
       </div>

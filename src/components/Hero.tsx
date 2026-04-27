@@ -11,7 +11,6 @@ export default function Hero() {
         background: "linear-gradient(160deg, #0D1B2A 0%, #0D2035 40%, #0A2940 100%)",
       }}
     >
-      {/* Background texture dots */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -21,7 +20,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Diagonal teal accent bar */}
       <div
         className="absolute top-0 right-0 bottom-0 pointer-events-none hidden lg:block"
         style={{
@@ -31,34 +29,9 @@ export default function Hero() {
         }}
       />
 
-      {/* Corner bracket decoration — top left */}
-      <div className="absolute top-24 left-6 sm:left-12 pointer-events-none hidden sm:block">
-        <div
-          style={{
-            width: 40,
-            height: 40,
-            borderTop: "2px solid rgba(47,111,149,0.5)",
-            borderLeft: "2px solid rgba(47,111,149,0.5)",
-          }}
-        />
-      </div>
-      {/* Corner bracket decoration — bottom right */}
-      <div className="absolute bottom-12 right-6 sm:right-12 pointer-events-none hidden sm:block">
-        <div
-          style={{
-            width: 40,
-            height: 40,
-            borderBottom: "2px solid rgba(47,111,149,0.5)",
-            borderRight: "2px solid rgba(47,111,149,0.5)",
-          }}
-        />
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 pt-20 pb-16">
-          {/* Text content */}
           <div className="flex-1 text-center lg:text-left">
-            {/* Eyebrow */}
             <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
               <div style={{ width: 32, height: 1, background: "#2F6F95" }} />
               <span
@@ -74,7 +47,6 @@ export default function Hero() {
               <div style={{ width: 32, height: 1, background: "#2F6F95" }} />
             </div>
 
-            {/* Headline */}
             <h1
               className="mb-4 leading-none"
               style={{
@@ -85,29 +57,35 @@ export default function Hero() {
                 color: "#FFFFFF",
               }}
             >
-              BUILT ON
+              EXCAVATION
               <br />
-              <span style={{ color: "#2F6F95" }}>SOLID</span>
-              <br />
-              GROUND
+              <span style={{ color: "#2F6F95" }}>DONE RIGHT</span>
             </h1>
 
-            {/* Sub-headline */}
             <p
-              className="mb-10 max-w-xl mx-auto lg:mx-0"
+              className="mb-8 max-w-xl mx-auto lg:mx-0"
               style={{
                 fontFamily: "var(--font-source-sans)",
-                fontSize: "clamp(1rem, 2vw, 1.2rem)",
+                fontSize: "clamp(1rem, 2vw, 1.1rem)",
                 color: "#B8C4CC",
                 lineHeight: 1.7,
               }}
             >
-              Professional excavation and heavy equipment work done right,
-              the first time. Serving homeowners, contractors, and developers
-              across Arkansas from our home base in Benton.
+              Chase Malone handles French drains, septic digging, land clearing, grading, trenching, pools, and general dirt work.
             </p>
 
-            {/* CTAs */}
+            <p
+              className="mb-10 max-w-xl mx-auto lg:mx-0"
+              style={{
+                fontFamily: "var(--font-source-sans)",
+                fontSize: "1rem",
+                color: "#8FA0AD",
+                lineHeight: 1.7,
+              }}
+            >
+              Based in Benton. Works anywhere in Arkansas.
+            </p>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="tel:+18708830599"
@@ -133,7 +111,6 @@ export default function Hero() {
                 }}
               >
                 <PhoneIcon />
-                {/* PLACEHOLDER — replace with real number */}
                 CALL (870) 883-0599
               </a>
               <a
@@ -157,52 +134,14 @@ export default function Hero() {
                   e.currentTarget.style.color = "#F4EFE6";
                 }}
               >
-                OUR SERVICES
+                SEE SERVICES
                 <ArrowRightIcon />
               </a>
             </div>
-
-            {/* Trust bar */}
-            <div
-              className="mt-10 pt-8 flex flex-wrap items-center gap-6 justify-center lg:justify-start"
-              style={{ borderTop: "1px solid rgba(47,111,149,0.2)" }}
-            >
-              {[
-                { num: "Est.", sub: "2026" },
-                { num: "100%", sub: "Arkansas Based" },
-                { num: "Free", sub: "Estimates" },
-              ].map((item) => (
-                <div key={item.sub} className="text-center">
-                  <div
-                    className="leading-none"
-                    style={{
-                      fontFamily: "var(--font-oswald)",
-                      fontSize: "1.5rem",
-                      fontWeight: 700,
-                      color: "#2F6F95",
-                    }}
-                  >
-                    {item.num}
-                  </div>
-                  <div
-                    className="mt-1 text-xs uppercase tracking-widest"
-                    style={{
-                      fontFamily: "var(--font-oswald)",
-                      color: "#7A8F9A",
-                      letterSpacing: "0.15em",
-                    }}
-                  >
-                    {item.sub}
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
 
-          {/* Logo badge */}
           <div className="shrink-0 flex items-center justify-center">
             <div className="relative">
-              {/* Outer glow ring */}
               <div
                 className="absolute inset-0 rounded-full"
                 style={{
@@ -227,29 +166,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Bottom fade */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(to bottom, transparent, rgba(13,27,42,0.8))",
-        }}
-      />
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span
-          className="text-xs tracking-widest uppercase"
-          style={{ fontFamily: "var(--font-oswald)", color: "rgba(47,111,149,0.6)", letterSpacing: "0.2em" }}
-        >
-          scroll
-        </span>
-        <svg width="14" height="20" viewBox="0 0 14 20" fill="none">
-          <rect x="5" y="1" width="4" height="8" rx="2" stroke="rgba(47,111,149,0.6)" strokeWidth="1.5" />
-          <path d="M7 10v7M4 14l3 3 3-3" stroke="rgba(47,111,149,0.6)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
       </div>
     </section>
   );
