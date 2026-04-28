@@ -51,7 +51,7 @@ export default function Header() {
                 className="block leading-none"
                 style={{
                   fontFamily: "var(--font-oswald)",
-                  fontSize: "0.7rem",
+                  fontSize: "0.75rem",
                   fontWeight: 400,
                   letterSpacing: "0.25em",
                   color: "#2F6F95",
@@ -68,10 +68,11 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm transition-colors duration-200"
+                className="transition-colors duration-200"
                 style={{
                   fontFamily: "var(--font-oswald)",
                   fontWeight: 500,
+                  fontSize: "1rem",
                   letterSpacing: "0.1em",
                   color: "#D6D0C4",
                 }}
@@ -87,9 +88,11 @@ export default function Header() {
             ))}
             <a
               href="#contact"
-              className="ml-2 px-5 py-2 text-sm font-semibold transition-all duration-200"
+              className="ml-2 px-5 py-2 font-semibold transition-all duration-200"
+
               style={{
                 fontFamily: "var(--font-oswald)",
+                fontSize: "1rem",
                 letterSpacing: "0.1em",
                 background: "#2F6F95",
                 color: "#0D1B2A",

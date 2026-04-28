@@ -17,46 +17,22 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Logo / visual */}
           <div className="flex items-center justify-center">
-            <div className="relative">
-              {/* Offset frame */}
-              <div
-                className="absolute -bottom-4 -right-4 w-full h-full"
-                style={{
-                  border: "2px solid rgba(47,111,149,0.2)",
-                  borderRadius: "2px",
-                }}
+            <div
+              className="relative"
+              style={{ width: "clamp(160px, 20vw, 240px)", aspectRatio: "2/3" }}
+            >
+              <Image
+                src="/logo.png"
+                alt="Malone Excavation"
+                fill
+                style={{ objectFit: "contain" }}
+                sizes="(max-width: 1024px) 160px, 240px"
               />
-              <div
-                className="relative flex items-center justify-center p-12"
-                style={{
-                  background: "rgba(22,37,57,0.8)",
-                  border: "1px solid rgba(47,111,149,0.15)",
-                  borderRadius: "2px",
-                }}
-              >
-                <Image
-                  src="/logo.png"
-                  alt="Malone Excavation"
-                  width={240}
-                  height={240}
-                  style={{ width: "clamp(160px, 20vw, 240px)", height: "auto" }}
-                />
-              </div>
             </div>
           </div>
 
           {/* Content */}
           <div>
-            <span
-              className="inline-block mb-4 text-xs tracking-widest uppercase"
-              style={{
-                fontFamily: "var(--font-oswald)",
-                color: "#2F6F95",
-                letterSpacing: "0.3em",
-              }}
-            >
-              About
-            </span>
             <h2
               className="mb-4 leading-none"
               style={{
@@ -67,9 +43,9 @@ export default function About() {
                 letterSpacing: "0.03em",
               }}
             >
-              MEET
+              MALONE
               <br />
-              <span style={{ color: "#2F6F95" }}>CHASE MALONE</span>
+              <span style={{ color: "#2F6F95" }}>EXCAVATION</span>
             </h2>
             <div
               className="mb-8"
@@ -80,28 +56,16 @@ export default function About() {
               className="space-y-5"
               style={{
                 fontFamily: "var(--font-source-sans)",
-                fontSize: "1rem",
+                fontSize: "1.1rem",
                 color: "#8FA0AD",
                 lineHeight: 1.8,
               }}
             >
               <p>
-                Chase Malone grew up in Arkansas, and he&apos;s spent his career
-                learning the ground — how it behaves, how it drains, how it holds
-                after you move it around. That knowledge doesn&apos;t come from a classroom.
-                It comes from years of seat time in the cab and jobs that demanded
-                precision.
+                We&apos;re based in Benton and have spent years working the ground across Arkansas — learning how it drains, how it holds, and what the work actually takes.
               </p>
               <p>
-                Malone Excavation was built on a straightforward idea: be the contractor
-                you wish you could always hire. Show up when you say you will, do the
-                work right the first time, and give your customers a straight answer
-                when they have a question.
-              </p>
-              <p>
-                Whether you&apos;re a homeowner dealing with a drainage problem, a builder
-                starting a subdivision, or a developer turning raw land into something
-                useful — Chase brings the same approach to every job.
+                Owner-operated, straightforward pricing, and we show up on time.
               </p>
             </div>
 
@@ -113,7 +77,7 @@ export default function About() {
                 { label: "Based In", value: "Benton, AR" },
                 { label: "Established", value: "2026" },
                 { label: "Coverage", value: "Statewide" },
-                { label: "Estimates", value: "Free & Fast" },
+                { label: "Estimates", value: "Free" },
               ].map((fact) => (
                 <div
                   key={fact.label}
@@ -130,7 +94,7 @@ export default function About() {
                       fontFamily: "var(--font-oswald)",
                       color: "rgba(47,111,149,0.7)",
                       letterSpacing: "0.2em",
-                      fontSize: "0.65rem",
+                      fontSize: "0.75rem",
                     }}
                   >
                     {fact.label}
@@ -139,7 +103,7 @@ export default function About() {
                     style={{
                       fontFamily: "var(--font-oswald)",
                       fontWeight: 600,
-                      fontSize: "1rem",
+                      fontSize: "1.1rem",
                       color: "#FFFFFF",
                       letterSpacing: "0.05em",
                     }}

@@ -45,3 +45,8 @@ img {
 ::selection {
   background: rgba(59, 174, 174, 0.3);
 }
+
+@keyframes carousel-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

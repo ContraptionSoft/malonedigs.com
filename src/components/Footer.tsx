@@ -47,7 +47,7 @@ export default function Footer() {
                   style={{
                     fontFamily: "var(--font-oswald)",
                     fontWeight: 400,
-                    fontSize: "0.6rem",
+                    fontSize: "0.75rem",
                     letterSpacing: "0.3em",
                     color: "#2F6F95",
                     lineHeight: 1,
@@ -61,7 +61,7 @@ export default function Footer() {
             <p
               style={{
                 fontFamily: "var(--font-source-sans)",
-                fontSize: "0.9rem",
+                fontSize: "1rem",
                 color: "#556070",
                 lineHeight: 1.7,
               }}
@@ -76,7 +76,7 @@ export default function Footer() {
               style={{
                 fontFamily: "var(--font-oswald)",
                 fontWeight: 600,
-                fontSize: "0.8rem",
+                fontSize: "0.9rem",
                 letterSpacing: "0.25em",
                 color: "#FFFFFF",
                 textTransform: "uppercase",
@@ -89,9 +89,10 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm transition-colors duration-150"
+                    className="transition-colors duration-150"
                     style={{
                       fontFamily: "var(--font-source-sans)",
+                      fontSize: "1rem",
                       color: "#556070",
                     }}
                     onMouseEnter={(e) =>
@@ -114,7 +115,7 @@ export default function Footer() {
               style={{
                 fontFamily: "var(--font-oswald)",
                 fontWeight: 600,
-                fontSize: "0.8rem",
+                fontSize: "0.9rem",
                 letterSpacing: "0.25em",
                 color: "#FFFFFF",
                 textTransform: "uppercase",
@@ -143,7 +144,7 @@ export default function Footer() {
               className="mt-3"
               style={{
                 fontFamily: "var(--font-source-sans)",
-                fontSize: "0.85rem",
+                fontSize: "1rem",
                 color: "#556070",
                 lineHeight: 1.6,
               }}
@@ -160,7 +161,7 @@ export default function Footer() {
           <p
             style={{
               fontFamily: "var(--font-source-sans)",
-              fontSize: "0.8rem",
+              fontSize: "0.9rem",
               color: "#374755",
             }}
           >
@@ -169,7 +170,7 @@ export default function Footer() {
           <p
             style={{
               fontFamily: "var(--font-source-sans)",
-              fontSize: "0.8rem",
+              fontSize: "0.9rem",
               color: "#374755",
             }}
           >

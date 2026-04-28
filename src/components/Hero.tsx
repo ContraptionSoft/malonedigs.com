@@ -11,24 +11,6 @@ export default function Hero() {
         background: "linear-gradient(160deg, #0D1B2A 0%, #0D2035 40%, #0A2940 100%)",
       }}
     >
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, rgba(47,111,149,0.08) 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
-        }}
-      />
-
-      <div
-        className="absolute top-0 right-0 bottom-0 pointer-events-none hidden lg:block"
-        style={{
-          width: "42%",
-          background:
-            "linear-gradient(135deg, transparent 45%, rgba(47,111,149,0.06) 45%)",
-        }}
-      />
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 pt-20 pb-16">
           <div className="flex-1 text-center lg:text-left">
@@ -48,7 +30,7 @@ export default function Hero() {
             </div>
 
             <h1
-              className="mb-4 leading-none"
+              className="mb-6 leading-none"
               style={{
                 fontFamily: "var(--font-oswald)",
                 fontWeight: 700,
@@ -57,33 +39,21 @@ export default function Hero() {
                 color: "#FFFFFF",
               }}
             >
-              EXCAVATION
+              DIRT WORK
               <br />
-              <span style={{ color: "#2F6F95" }}>DONE RIGHT</span>
+              <span style={{ color: "#2F6F95" }}>FOR ARKANSAS</span>
             </h1>
-
-            <p
-              className="mb-8 max-w-xl mx-auto lg:mx-0"
-              style={{
-                fontFamily: "var(--font-source-sans)",
-                fontSize: "clamp(1rem, 2vw, 1.1rem)",
-                color: "#B8C4CC",
-                lineHeight: 1.7,
-              }}
-            >
-              Chase Malone handles French drains, septic digging, land clearing, grading, trenching, pools, and general dirt work.
-            </p>
 
             <p
               className="mb-10 max-w-xl mx-auto lg:mx-0"
               style={{
                 fontFamily: "var(--font-source-sans)",
-                fontSize: "1rem",
+                fontSize: "clamp(1.1rem, 2vw, 1.25rem)",
                 color: "#8FA0AD",
                 lineHeight: 1.7,
               }}
             >
-              Based in Benton. Works anywhere in Arkansas.
+              French drains, septic, land clearing, grading, trenching, pool digging, and site work — based in Benton, working anywhere in Arkansas.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -140,30 +110,18 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="shrink-0 flex items-center justify-center">
-            <div className="relative">
-              <div
-                className="absolute inset-0 rounded-full"
-                style={{
-                  background:
-                    "radial-gradient(circle, rgba(47,111,149,0.15) 0%, transparent 70%)",
-                  transform: "scale(1.5)",
-                }}
-              />
-              <Image
-                src="/logo.png"
-                alt="Malone Excavation"
-                width={300}
-                height={300}
-                className="relative z-10 drop-shadow-2xl"
-                style={{
-                  width: "clamp(200px, 28vw, 300px)",
-                  height: "auto",
-                  filter: "drop-shadow(0 0 40px rgba(47,111,149,0.2))",
-                }}
-                priority
-              />
-            </div>
+          <div
+            className="shrink-0 relative"
+            style={{ width: "clamp(200px, 28vw, 300px)", aspectRatio: "2/3" }}
+          >
+            <Image
+              src="/logo.png"
+              alt="Malone Excavation"
+              fill
+              style={{ objectFit: "contain" }}
+              sizes="(max-width: 1024px) 200px, 300px"
+              priority
+            />
           </div>
         </div>
       </div>

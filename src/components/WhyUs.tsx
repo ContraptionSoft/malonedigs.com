@@ -4,7 +4,7 @@ const pillars = [
   {
     number: "01",
     title: "Owner-Operated",
-    body: "Chase Malone is on every job. You're not dealing with a dispatcher or a crew foreman you've never met — you're working with the man running the machine. That accountability makes a difference in how work gets done.",
+    body: "Malone is on every job. You're working directly with the operator, not a dispatcher.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
@@ -15,7 +15,7 @@ const pillars = [
   {
     number: "02",
     title: "Straight Talk",
-    body: "No padded quotes. No bait-and-switch scope. You'll get an honest assessment of what the job actually requires and a fair price for the work. If something changes on-site, we tell you before we do it.",
+    body: "Honest quotes, no scope creep. If something changes on-site, you hear about it before we do it.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
@@ -24,8 +24,8 @@ const pillars = [
   },
   {
     number: "03",
-    title: "The Right Equipment",
-    body: "We run the right machine for the job — not whatever happens to be available. Proper equipment means cleaner work, fewer surprises, and a finished product that holds up.",
+    title: "Right Equipment",
+    body: "We match the machine to the job — not whatever's available. Cleaner work, fewer surprises.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="3"/>
@@ -35,8 +35,8 @@ const pillars = [
   },
   {
     number: "04",
-    title: "Shows Up on Time",
-    body: "Sounds basic because it is basic — and yet it's apparently rare. We schedule the job and we're there. Your project doesn't stall while you wait for a contractor to get around to it.",
+    title: "Shows Up",
+    body: "We schedule a job, we're there. No chasing down a contractor to find out where they are.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10"/>
@@ -62,16 +62,6 @@ export default function WhyUs() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left: header */}
           <div className="lg:sticky lg:top-28">
-            <span
-              className="inline-block mb-4 text-xs tracking-widest uppercase"
-              style={{
-                fontFamily: "var(--font-oswald)",
-                color: "#2F6F95",
-                letterSpacing: "0.3em",
-              }}
-            >
-              Why Malone
-            </span>
             <h2
               className="mb-6 leading-none"
               style={{
@@ -82,9 +72,9 @@ export default function WhyUs() {
                 letterSpacing: "0.03em",
               }}
             >
-              THE DIFFERENCE
+              WHY
               <br />
-              <span style={{ color: "#2F6F95" }}>IS SIMPLE</span>
+              <span style={{ color: "#2F6F95" }}>MALONE</span>
             </h2>
             <div
               className="mb-6"
@@ -94,21 +84,19 @@ export default function WhyUs() {
               className="mb-8"
               style={{
                 fontFamily: "var(--font-source-sans)",
-                fontSize: "1.05rem",
+                fontSize: "1.15rem",
                 color: "#8FA0AD",
                 lineHeight: 1.7,
               }}
             >
-              There are plenty of equipment operators in Arkansas.
-              Finding one who&apos;s dependable, communicates, and takes
-              pride in a finished job — that&apos;s the harder part.
-              That&apos;s where we come in.
+              Plenty of contractors in Arkansas. Harder to find one who shows up, does the work right, and gives you a straight answer.
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-7 py-3 font-semibold text-sm transition-all duration-200"
+              className="inline-flex items-center gap-2 px-7 py-3 font-semibold transition-all duration-200"
               style={{
                 fontFamily: "var(--font-oswald)",
+                fontSize: "1rem",
                 letterSpacing: "0.12em",
                 background: "#2F6F95",
                 color: "#0D1B2A",
@@ -168,7 +156,7 @@ export default function WhyUs() {
                     style={{
                       fontFamily: "var(--font-oswald)",
                       fontWeight: 600,
-                      fontSize: "1.1rem",
+                      fontSize: "1.2rem",
                       letterSpacing: "0.06em",
                       color: "#FFFFFF",
                     }}
@@ -178,7 +166,7 @@ export default function WhyUs() {
                   <p
                     style={{
                       fontFamily: "var(--font-source-sans)",
-                      fontSize: "0.95rem",
+                      fontSize: "1.05rem",
                       color: "#7A8F9A",
                       lineHeight: 1.7,
                     }}

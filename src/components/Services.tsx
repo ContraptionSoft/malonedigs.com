@@ -1,16 +1,21 @@
 "use client";
 
+import Image from "next/image";
+
 const services = [
-  "French drains",
-  "Septic digging",
-  "Land clearing",
-  "Grading",
-  "Trenching",
-  "Pool digging",
-  "Site prep",
-  "General dirt work",
-  "Land development",
+  { name: "French Drains",     image: "/french_drain.jpg" },
+  { name: "Septic Digging",    image: "/septic_digging.jpg" },
+  { name: "Land Clearing",     image: "/land_clearing.jpg" },
+  { name: "Grading",           image: "/grading.jpg" },
+  { name: "Trenching",         image: "/trenching.jpg" },
+  { name: "Pool Digging",      image: "/pool_digging.jpg" },
+  { name: "Site Prep",         image: "/site_prep.jpg" },
+  { name: "General Dirt Work", image: "/general_dirt_work.jpg" },
+  { name: "Land Development",  image: "/land_development.jpg" },
 ];
+
+const CARD_W = 380;
+const GAP = 20;
 
 export default function Services() {
   return (
@@ -24,77 +29,74 @@ export default function Services() {
         style={{ background: "linear-gradient(to right, transparent, #2F6F95, transparent)" }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <span
-            className="inline-block mb-4 text-xs tracking-widest uppercase"
-            style={{
-              fontFamily: "var(--font-oswald)",
-              color: "#2F6F95",
-              letterSpacing: "0.3em",
-            }}
-          >
-            What We Do
-          </span>
-          <h2
-            className="mb-6 leading-none"
-            style={{
-              fontFamily: "var(--font-oswald)",
-              fontWeight: 700,
-              fontSize: "clamp(2rem, 5vw, 3.5rem)",
-              color: "#FFFFFF",
-              letterSpacing: "0.03em",
-            }}
-          >
-            SERVICES
-          </h2>
-          <div
-            className="mx-auto mb-6"
-            style={{ width: 64, height: 2, background: "#2F6F95" }}
-          />
-          <p
-            className="max-w-2xl mx-auto"
-            style={{
-              fontFamily: "var(--font-source-sans)",
-              fontSize: "1.05rem",
-              color: "#8FA0AD",
-              lineHeight: 1.7,
-            }}
-          >
-            If it involves dirt and a machine, there&apos;s a good chance Chase can handle it.
-          </p>
-        </div>
-
-        <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px"
-          style={{ background: "rgba(47,111,149,0.12)", border: "1px solid rgba(47,111,149,0.12)" }}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-14 text-center">
+        <h2
+          className="mb-4 leading-none"
+          style={{
+            fontFamily: "var(--font-oswald)",
+            fontWeight: 700,
+            fontSize: "clamp(2rem, 5vw, 3.5rem)",
+            color: "#FFFFFF",
+            letterSpacing: "0.03em",
+          }}
         >
-          {services.map((service) => (
+          SERVICES
+        </h2>
+        <div className="mx-auto" style={{ width: 64, height: 2, background: "#2F6F95" }} />
+      </div>
+
+      {/* Carousel */}
+      <div
+        className="overflow-hidden"
+        style={{
+          WebkitMaskImage: "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
+          maskImage: "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
+        }}
+      >
+        <div
+          className="flex"
+          style={{
+            gap: GAP,
+            width: "max-content",
+            animation: "carousel-scroll 32s linear infinite",
+          }}
+          onMouseEnter={(e) => {
+            (e.currentTarget as HTMLDivElement).style.animationPlayState = "paused";
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLDivElement).style.animationPlayState = "running";
+          }}
+        >
+          {[...services, ...services].map((service, i) => (
             <div
-              key={service}
-              className="group p-8 transition-all duration-300"
-              style={{ background: "#0D1B2A" }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLDivElement).style.background = "#0F2235";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLDivElement).style.background = "#0D1B2A";
-              }}
+              key={i}
+              className="relative shrink-0 overflow-hidden"
+              style={{ width: CARD_W, height: 260, borderRadius: "2px" }}
             >
+              <Image
+                src={service.image}
+                alt={service.name}
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="380px"
+              />
               <div
-                className="mb-4 h-1.5 w-12"
-                style={{ background: "#2F6F95", borderRadius: "2px" }}
+                className="absolute inset-0"
+                style={{
+                  background: "linear-gradient(to top, rgba(13,27,42,0.92) 0%, rgba(13,27,42,0.35) 55%, transparent 100%)",
+                }}
               />
               <h3
+                className="absolute bottom-0 left-0 right-0 p-5"
                 style={{
                   fontFamily: "var(--font-oswald)",
                   fontWeight: 600,
-                  fontSize: "1.15rem",
-                  letterSpacing: "0.06em",
+                  fontSize: "1.2rem",
+                  letterSpacing: "0.08em",
                   color: "#FFFFFF",
                 }}
               >
-                {service}
+                {service.name}
               </h3>
             </div>
           ))}

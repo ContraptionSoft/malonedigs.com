@@ -16,16 +16,6 @@ export default function Contact() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span
-            className="inline-block mb-4 text-xs tracking-widest uppercase"
-            style={{
-              fontFamily: "var(--font-oswald)",
-              color: "#2F6F95",
-              letterSpacing: "0.3em",
-            }}
-          >
-            Get in Touch
-          </span>
           <h2
             className="mb-4 leading-none"
             style={{
@@ -36,7 +26,7 @@ export default function Contact() {
               letterSpacing: "0.03em",
             }}
           >
-            CALL OR TEXT
+            GET IN TOUCH
           </h2>
           <div
             className="mx-auto mb-6"
@@ -51,7 +41,7 @@ export default function Contact() {
               lineHeight: 1.7,
             }}
           >
-            Best way to reach Chase is by phone.
+            Call or text for a free estimate.
           </p>
         </div>
 
@@ -92,7 +82,7 @@ export default function Contact() {
                   fontFamily: "var(--font-oswald)",
                   color: "rgba(47,111,149,0.7)",
                   letterSpacing: "0.2em",
-                  fontSize: "0.65rem",
+                  fontSize: "0.8rem",
                 }}
               >
                 Phone
@@ -101,7 +91,7 @@ export default function Contact() {
                 style={{
                   fontFamily: "var(--font-oswald)",
                   fontWeight: 700,
-                  fontSize: "1.7rem",
+                  fontSize: "2rem",
                   color: "#FFFFFF",
                   letterSpacing: "0.06em",
                 }}
@@ -138,7 +128,7 @@ export default function Contact() {
                 style={{
                   fontFamily: "var(--font-oswald)",
                   fontWeight: 600,
-                  fontSize: "0.9rem",
+                  fontSize: "1rem",
                   letterSpacing: "0.08em",
                   color: "#FFFFFF",
                 }}
@@ -148,7 +138,7 @@ export default function Contact() {
               <p
                 style={{
                   fontFamily: "var(--font-source-sans)",
-                  fontSize: "0.9rem",
+                  fontSize: "1rem",
                   color: "#6B8090",
                   lineHeight: 1.6,
                 }}
