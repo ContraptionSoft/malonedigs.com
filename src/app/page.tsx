@@ -50,8 +50,9 @@ export default function Home() {
             <Image src="/mark.png" alt="Malone Excavation" width={72} height={72} priority />
           </a>
           <nav aria-label="Primary navigation">
-            <a href="#services">Work</a>
-            <a href="#contact">Call</a>
+            <a className="nav-call" href={TEL}>
+              {PHONE}
+            </a>
           </nav>
         </div>
       </header>
@@ -90,9 +91,6 @@ export default function Home() {
               <a className="plate" href={TEL}>
                 {PHONE}
               </a>
-              <a className="ghost" href="#services">
-                See the work
-              </a>
             </div>
             <p className="trust" aria-label="Company details">
               {marks.map((mark, i) => (
@@ -125,7 +123,7 @@ export default function Home() {
           <div className="wrap proof-grid">
             <div>
               <p className="eyebrow">Why Malone</p>
-              <h2>One operator. Straight answers. The right machine on site.</h2>
+              <h2>Talk directly to the operator</h2>
             </div>
             <div className="proof-copy">
               <p>
@@ -154,10 +152,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      <a className="callbar" href={TEL}>
-        Call Malone Excavation
-      </a>
 
       <footer className="foot">
         <div className="wrap">

@@ -98,20 +98,24 @@ p {
 nav {
   display: flex;
   align-items: center;
-  gap: clamp(18px, 3vw, 36px);
-  color: rgba(230, 236, 242, 0.78);
+}
+
+.nav-call {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  color: #f2f7fc;
+  background: linear-gradient(177deg, var(--accent-hi), var(--accent) 46%, #142c48);
   font-family: var(--font-oswald), Impact, sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
+  transition: transform 0.18s ease;
 }
 
-nav a {
-  padding: 10px 0;
-}
-
-nav a:hover {
-  color: var(--accent-hi);
+.nav-call:hover {
+  transform: translateY(-2px);
 }
 
 .hero {
@@ -192,8 +196,7 @@ nav a:hover {
   margin-top: clamp(20px, 4svh, 48px);
 }
 
-.plate,
-.ghost {
+.plate {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -204,9 +207,6 @@ nav a:hover {
   font-weight: 700;
   text-transform: uppercase;
   transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
-}
-
-.plate {
   color: #f2f7fc;
   background: linear-gradient(177deg, var(--accent-hi), var(--accent) 46%, #142c48);
   box-shadow:
@@ -215,18 +215,8 @@ nav a:hover {
     0 18px 38px rgba(0, 0, 0, 0.32);
 }
 
-.ghost {
-  color: #fff;
-  border: 1px solid rgba(230, 236, 242, 0.32);
-}
-
-.plate:hover,
-.ghost:hover {
+.plate:hover {
   transform: translateY(-2px);
-}
-
-.ghost:hover {
-  border-color: var(--accent-hi);
 }
 
 .trust {
@@ -424,10 +414,6 @@ nav a:hover {
   font-size: 14px;
 }
 
-.callbar {
-  display: none;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .hero-video {
     display: none;
@@ -448,8 +434,8 @@ nav a:hover {
     height: 58px;
   }
 
-  nav {
-    gap: 18px;
+  .nav-call {
+    padding: 8px 14px;
     font-size: 14px;
   }
 
@@ -522,32 +508,8 @@ nav a:hover {
 }
 
 @media (max-width: 620px) {
-  .foot {
-    padding-bottom: 92px;
-  }
-
-  .hero {
-    padding-bottom: calc(clamp(20px, 3.4svh, 70px) + 58px);
-  }
-
   .hero-logo {
     height: min(26svh, 240px);
-  }
-
-  .callbar {
-    position: fixed;
-    inset: auto 0 0;
-    z-index: 30;
-    display: block;
-    padding: 16px;
-    color: #f2f7fc;
-    background: linear-gradient(177deg, var(--accent-hi), var(--accent) 46%, #142c48);
-    box-shadow: 0 -14px 30px rgba(0, 0, 0, 0.34);
-    font-family: var(--font-oswald), Impact, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
   }
 
   .phone {
