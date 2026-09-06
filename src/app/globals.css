@@ -98,20 +98,24 @@ p {
 nav {
   display: flex;
   align-items: center;
-  gap: clamp(18px, 3vw, 36px);
-  color: rgba(230, 236, 242, 0.78);
+}
+
+.nav-call {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  color: #f2f7fc;
+  background: linear-gradient(177deg, var(--accent-hi), var(--accent) 46%, #142c48);
   font-family: var(--font-oswald), Impact, sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
+  transition: transform 0.18s ease;
 }
 
-nav a {
-  padding: 10px 0;
-}
-
-nav a:hover {
-  color: var(--accent-hi);
+.nav-call:hover {
+  transform: translateY(-2px);
 }
 
 .hero {
@@ -430,8 +434,8 @@ nav a:hover {
     height: 58px;
   }
 
-  nav {
-    gap: 18px;
+  .nav-call {
+    padding: 8px 14px;
     font-size: 14px;
   }
 

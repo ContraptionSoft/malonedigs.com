@@ -50,8 +50,9 @@ export default function Home() {
             <Image src="/mark.png" alt="Malone Excavation" width={72} height={72} priority />
           </a>
           <nav aria-label="Primary navigation">
-            <a href="#services">Work</a>
-            <a href="#contact">Call</a>
+            <a className="nav-call" href={TEL}>
+              {PHONE}
+            </a>
           </nav>
         </div>
       </header>
