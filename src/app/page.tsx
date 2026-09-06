@@ -12,12 +12,7 @@ const services = [
   "Land development",
 ];
 
-const marks = [
-  "Owner-operated",
-  "Benton, Arkansas",
-  "Statewide work",
-  "Free estimates",
-];
+const marks = ["Owner-operated", "Free estimates"];
 
 const jobs: JobSpec[] = [
   {
@@ -99,11 +94,14 @@ export default function Home() {
                 See the work
               </a>
             </div>
-            <ul className="trust" aria-label="Company details">
-              {marks.map((mark) => (
-                <li key={mark}>{mark}</li>
+            <p className="trust" aria-label="Company details">
+              {marks.map((mark, i) => (
+                <span key={mark} className="trust-item">
+                  {i > 0 && <span className="diamond" aria-hidden="true" />}
+                  {mark}
+                </span>
               ))}
-            </ul>
+            </p>
           </div>
         </section>
 
