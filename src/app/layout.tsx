@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Oswald, Source_Sans_3 } from "next/font/google";
+import { Providers } from "./providers";
 import "./globals.css";
 
 const oswald = Oswald({
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.malonedigs.com"),
   title: "Malone Excavation | Dirt Work & Excavation in Benton, Arkansas",
   description:
-    "Malone Excavation — owner-operated excavation and dirt work based in Benton, AR. French drains, septic digging, land clearing, grading, trenching, pool digging, and site prep. Serving all of Arkansas. Call for a free estimate.",
+    "Malone Excavation — owner-operated excavation and dirt work based in Benton, AR. French drains, septic digging, land clearing, grading, trenching, and site prep. Serving all of Arkansas. Call for a free estimate.",
   keywords: [
     "excavation Benton Arkansas",
     "dirt work Benton AR",
@@ -30,7 +31,6 @@ export const metadata: Metadata = {
     "French drain Arkansas",
     "grading site prep Benton AR",
     "trenching excavation Arkansas",
-    "pool excavation Arkansas",
     "land development Arkansas",
     "owner operated excavation Arkansas",
     "excavation Saline County Arkansas",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/logo.png",
-        width: 1024,
-        height: 1536,
+        width: 933,
+        height: 934,
         alt: "Malone Excavation",
       },
     ],
@@ -75,7 +75,7 @@ export default function RootLayout({
       className={`${oswald.variable} ${sourceSans.variable}`}
     >
       <body className="min-h-screen">
-        {children}
+        <Providers>{children}</Providers>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -86,7 +86,7 @@ export default function RootLayout({
               url: "https://www.malonedigs.com",
               telephone: "+18708830599",
               description:
-                "Owner-operated excavation and dirt work based in Benton, Arkansas. Services include French drains, septic digging, land clearing, grading, trenching, pool digging, and site prep.",
+                "Owner-operated excavation and dirt work based in Benton, Arkansas. Services include French drains, septic digging, land clearing, grading, trenching, and site prep.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Benton",

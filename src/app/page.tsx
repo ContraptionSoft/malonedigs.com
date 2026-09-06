@@ -1,25 +1,172 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import WhyUs from "@/components/WhyUs";
-import ServiceArea from "@/components/ServiceArea";
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Image from "next/image";
+import { Job, ContactPlanes, type JobSpec } from "@/components/Job";
+
+const services = [
+  "French drains",
+  "Septic digging",
+  "Land clearing",
+  "Grading",
+  "Trenching",
+  "Site prep",
+  "General dirt work",
+  "Land development",
+];
+
+const marks = [
+  "Owner-operated",
+  "Benton, Arkansas",
+  "Statewide work",
+  "Free estimates",
+];
+
+const jobs: JobSpec[] = [
+  {
+    image: "/grading.jpg",
+    alt: "A dozer shaping a graded pad",
+    crop: "50% 52%",
+    ground: "84% 24%",
+    caption: "Grading & pad work",
+  },
+  {
+    image: "/land_clearing.jpg",
+    alt: "Timber and brush cleared off raw acreage",
+    crop: "50% 48%",
+    ground: "92% 80%",
+    caption: "Land clearing",
+  },
+  {
+    image: "/septic_digging.jpg",
+    alt: "An excavator cutting a septic trench",
+    crop: "50% 55%",
+    ground: "70% 8%",
+    caption: "Septic, trenching & drainage",
+  },
+];
+
+const PHONE = "(870) 883-0599";
+const TEL = "tel:+18708830599";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-        <WhyUs />
-        <ServiceArea />
-        <About />
-        <Contact />
+      <header className="bar">
+        <div className="wrap">
+          <a className="brand" href="#top" aria-label="Malone Excavation home">
+            <Image src="/mark.png" alt="Malone Excavation" width={72} height={72} priority />
+          </a>
+          <nav aria-label="Primary navigation">
+            <a href="#services">Work</a>
+            <a href="#contact">Call</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section className="hero">
+          <video
+            className="hero-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/hero-poster.jpg"
+            aria-hidden="true"
+          >
+            <source src="/hero.mp4" type="video/mp4" />
+          </video>
+          <div className="hero-shade" />
+          <div className="wrap hero-copy">
+            <h1>
+              <Image
+                className="hero-logo"
+                src="/logo.png"
+                alt="Malone Excavation - dirt work with a clean finish"
+                width={933}
+                height={934}
+                priority
+              />
+            </h1>
+            <p className="tag">Benton, Arkansas</p>
+            <p className="lede">
+              Excavation, drainage, clearing, grading, and site prep across Arkansas.
+            </p>
+            <div className="actions">
+              <a className="plate" href={TEL}>
+                {PHONE}
+              </a>
+              <a className="ghost" href="#services">
+                See the work
+              </a>
+            </div>
+            <ul className="trust" aria-label="Company details">
+              {marks.map((mark) => (
+                <li key={mark}>{mark}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <Job index={0} job={jobs[0]} />
+
+        <section id="services" className="paper">
+          <div className="wrap">
+            <p className="eyebrow">What we do</p>
+            <h2>Moving dirt, solving drainage, opening sites.</h2>
+            <div className="service-list">
+              {services.map((service) => (
+                <p key={service}>{service}</p>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <Job index={1} job={jobs[1]} />
+
+        <section className="paper proof">
+          <div className="wrap proof-grid">
+            <div>
+              <p className="eyebrow">Why Malone</p>
+              <h2>One operator. Straight answers. The right machine on site.</h2>
+            </div>
+            <div className="proof-copy">
+              <p>
+                You work directly with Chase. The scope is clear, the price is clear,
+                and if the ground changes the conversation happens before the work does.
+              </p>
+              <p>
+                Based in Benton and built for Arkansas soil, drainage, slopes, clay,
+                timber, and rough access.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <Job index={2} job={jobs[2]} />
+
+        <section id="contact" className="contact">
+          <ContactPlanes />
+          <div className="wrap">
+            <p className="tag">Free estimates</p>
+            <h2>Tell us what needs dug.</h2>
+            <a className="phone" href={TEL}>
+              {PHONE}
+            </a>
+            <p className="meta">Serving Benton, Saline County, and job sites across Arkansas.</p>
+          </div>
+        </section>
       </main>
-      <Footer />
+
+      <a className="callbar" href={TEL}>
+        Call Malone Excavation
+      </a>
+
+      <footer className="foot">
+        <div className="wrap">
+          <Image src="/mark.png" alt="Malone Excavation" width={58} height={58} />
+          <p>Malone Excavation - Benton, Arkansas</p>
+        </div>
+      </footer>
     </>
   );
 }
