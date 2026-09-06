@@ -90,9 +90,6 @@ export default function Home() {
               <a className="plate" href={TEL}>
                 {PHONE}
               </a>
-              <a className="ghost" href="#services">
-                See the work
-              </a>
             </div>
             <p className="trust" aria-label="Company details">
               {marks.map((mark, i) => (
@@ -125,7 +122,7 @@ export default function Home() {
           <div className="wrap proof-grid">
             <div>
               <p className="eyebrow">Why Malone</p>
-              <h2>One operator. Straight answers. The right machine on site.</h2>
+              <h2>Talk directly to the operator</h2>
             </div>
             <div className="proof-copy">
               <p>
@@ -154,10 +151,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      <a className="callbar" href={TEL}>
-        Call Malone Excavation
-      </a>
 
       <footer className="foot">
         <div className="wrap">
