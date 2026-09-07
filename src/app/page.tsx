@@ -47,7 +47,7 @@ export default function Home() {
       <header className="bar">
         <div className="wrap">
           <a className="brand" href="#top" aria-label="Malone Excavation home">
-            <Image src="/mark.png" alt="Malone Excavation" width={604} height={453} priority />
+            <Image src="/logo_text.png" alt="Malone Excavation" width={604} height={453} priority />
           </a>
           <nav aria-label="Primary navigation">
             <a className="nav-call" href={TEL}>
@@ -144,18 +144,25 @@ export default function Home() {
           <ContactPlanes />
           <div className="wrap">
             <p className="tag">Free estimates</p>
-            <h2>Tell us what needs dug.</h2>
+            <h2>Tell us what needs dug</h2>
             <a className="phone" href={TEL}>
               {PHONE}
             </a>
-            <p className="meta">Serving Benton, Saline County, and job sites across Arkansas.</p>
+            <p className="meta">Serving Benton, Saline County, and job sites across Arkansas</p>
           </div>
         </section>
       </main>
 
       <footer className="foot">
         <div className="wrap">
-          <Image src="/mark.png" alt="Malone Excavation" width={604} height={453} />
+          <Image
+                className="hero-logo"
+                src="/logo.png"
+                alt="Malone Excavation - dirt work with a clean finish"
+                width={736}
+                height={772}
+                priority
+              />
           <p>Malone Excavation - Benton, Arkansas</p>
         </div>
       </footer>
