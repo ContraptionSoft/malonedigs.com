@@ -121,7 +121,7 @@ nav {
 
 .hero {
   position: relative;
-  min-height: 100svh;
+  min-height: 100dvh;
   overflow: hidden;
   display: flex;
   align-items: center;
