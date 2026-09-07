@@ -108,7 +108,7 @@ export default function Home() {
         <section id="services" className="paper">
           <div className="wrap">
             <p className="eyebrow">What we do</p>
-            <h2>Moving dirt, solving drainage, opening sites.</h2>
+            <h2>Moving dirt, solving drainage, opening sites</h2>
             <div className="service-list">
               {services.map((service) => (
                 <p key={service}>{service}</p>
