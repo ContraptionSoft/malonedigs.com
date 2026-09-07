@@ -7,8 +7,9 @@
   --paper-2: #f4f6f9;
   --ink: #12161c;
   --muted: #6d7683;
-  --accent: #2c5a94;
-  --accent-hi: #6b9cdb;
+  --accent: #21508c;
+  --accent-hi: #5895e4;
+  --accent-deep: #011f46;
   --line: rgba(255, 255, 255, 0.14);
   --paper-line: rgba(18, 22, 28, 0.16);
   --wrap: 1120px;
@@ -78,7 +79,7 @@ p {
   inset: 0 0 auto;
   z-index: 20;
   background: linear-gradient(180deg, rgba(7, 9, 12, 0.86), rgba(7, 9, 12, 0.48));
-  border-bottom: 1px solid rgba(107, 156, 219, 0.22);
+  border-bottom: 1px solid rgba(88, 149, 228, 0.22);
   backdrop-filter: blur(10px);
 }
 
@@ -106,7 +107,7 @@ nav {
   justify-content: center;
   padding: 10px 20px;
   color: #f2f7fc;
-  background: linear-gradient(177deg, var(--accent-hi), var(--accent) 46%, #142c48);
+  background: linear-gradient(177deg, var(--accent-hi), var(--accent) 46%, var(--accent-deep));
   font-family: var(--font-oswald), Impact, sans-serif;
   font-size: 15px;
   font-weight: 600;
@@ -208,7 +209,7 @@ nav {
   text-transform: uppercase;
   transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
   color: #f2f7fc;
-  background: linear-gradient(177deg, var(--accent-hi), var(--accent) 46%, #142c48);
+  background: linear-gradient(177deg, var(--accent-hi), var(--accent) 46%, var(--accent-deep));
   box-shadow:
     inset 0 1px 0 rgba(226, 238, 252, 0.6),
     inset 0 -1px 0 rgba(6, 14, 26, 0.4),
@@ -281,11 +282,11 @@ nav {
    read as cut apart rather than overlapped. */
 .job-photo {
   filter: saturate(0.86) contrast(1.08) brightness(0.84);
-  box-shadow: -1px 0 0 rgba(107, 156, 219, 0.5), -26px 0 54px -20px rgba(0, 0, 0, 0.8);
+  box-shadow: -1px 0 0 rgba(88, 149, 228, 0.5), -26px 0 54px -20px rgba(0, 0, 0, 0.8);
 }
 
 .job.flip .job-photo {
-  box-shadow: 1px 0 0 rgba(107, 156, 219, 0.5), 26px 0 54px -20px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 0 0 rgba(88, 149, 228, 0.5), 26px 0 54px -20px rgba(0, 0, 0, 0.8);
 }
 
 .job-ground {
@@ -394,7 +395,7 @@ nav {
   background: var(--soil);
   color: rgba(230, 236, 242, 0.58);
   padding: 34px 0;
-  border-top: 1px solid rgba(107, 156, 219, 0.18);
+  border-top: 1px solid rgba(88, 149, 228, 0.18);
 }
 
 .foot .wrap {
