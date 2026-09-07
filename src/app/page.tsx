@@ -143,8 +143,7 @@ export default function Home() {
         <section id="contact" className="contact">
           <ContactPlanes />
           <div className="wrap">
-            <p className="tag">Free estimates</p>
-            <h2>Tell us what needs dug</h2>
+            <h2>Get a free estimate</h2>
             <a className="phone" href={TEL}>
               {PHONE}
             </a>
