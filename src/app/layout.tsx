@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Oswald, Source_Sans_3 } from "next/font/google";
 import { Providers } from "./providers";
 import "./globals.css";
@@ -76,6 +77,16 @@ export default function RootLayout({
     >
       <body className="min-h-screen">
         <Providers>{children}</Providers>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q3BG02EDWW"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-Q3BG02EDWW');`}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
