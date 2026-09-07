@@ -49,14 +49,14 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/logo.png",
-        width: 933,
-        height: 934,
+        width: 1024,
+        height: 1024,
         alt: "Malone Excavation",
       },
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Malone Excavation | Benton, Arkansas",
     description:
       "Owner-operated excavation and dirt work across Arkansas. Based in Benton, AR. Call for a free estimate.",

@@ -78,8 +78,8 @@ export default function Home() {
                 className="hero-logo"
                 src="/logo.png"
                 alt="Malone Excavation - dirt work with a clean finish"
-                width={933}
-                height={934}
+                width={1024}
+                height={1024}
                 priority
               />
             </h1>
