@@ -47,7 +47,7 @@ export default function Home() {
       <header className="bar">
         <div className="wrap">
           <a className="brand" href="#top" aria-label="Malone Excavation home">
-            <Image src="/mark.png" alt="Malone Excavation" width={72} height={72} priority />
+            <Image src="/mark.png" alt="Malone Excavation" width={604} height={453} priority />
           </a>
           <nav aria-label="Primary navigation">
             <a className="nav-call" href={TEL}>
@@ -78,8 +78,8 @@ export default function Home() {
                 className="hero-logo"
                 src="/logo.png"
                 alt="Malone Excavation - dirt work with a clean finish"
-                width={933}
-                height={934}
+                width={736}
+                height={772}
                 priority
               />
             </h1>
@@ -155,7 +155,7 @@ export default function Home() {
 
       <footer className="foot">
         <div className="wrap">
-          <Image src="/mark.png" alt="Malone Excavation" width={58} height={58} />
+          <Image src="/mark.png" alt="Malone Excavation" width={604} height={453} />
           <p>Malone Excavation - Benton, Arkansas</p>
         </div>
       </footer>
