@@ -120,14 +120,17 @@ nav {
 }
 
 .hero {
+  /* Height of the collapsible mobile browser UI. Zero everywhere it can't collapse. */
+  --chrome-h: calc(100lvh - 100svh);
   position: relative;
-  min-height: 100dvh;
+  min-height: 100lvh;
   overflow: hidden;
   display: flex;
   align-items: center;
   background: var(--soil);
   color: #fff;
-  padding: calc(var(--bar-h) + clamp(20px, 4.6svh, 88px)) 0 clamp(24px, 5svh, 90px);
+  padding: calc(var(--bar-h) + clamp(20px, 4.6svh, 88px)) 0
+    calc(clamp(24px, 5svh, 90px) + var(--chrome-h));
 }
 
 .hero-video,
