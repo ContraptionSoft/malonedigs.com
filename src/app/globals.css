@@ -7,9 +7,9 @@
   --paper-2: #f4f6f9;
   --ink: #12161c;
   --muted: #6d7683;
-  --accent: #21508c;
-  --accent-hi: #5895e4;
-  --accent-deep: #011f46;
+  --accent: #0361ed;
+  --accent-hi: #4c8dff;
+  --accent-deep: #0132a8;
   --line: rgba(255, 255, 255, 0.14);
   --paper-line: rgba(18, 22, 28, 0.16);
   --wrap: 1120px;
@@ -79,7 +79,7 @@ p {
   inset: 0 0 auto;
   z-index: 20;
   background: linear-gradient(180deg, rgba(7, 9, 12, 0.86), rgba(7, 9, 12, 0.48));
-  border-bottom: 1px solid rgba(88, 149, 228, 0.22);
+  border-bottom: 1px solid rgba(76, 141, 255, 0.22);
   backdrop-filter: blur(10px);
 }
 
@@ -92,7 +92,7 @@ p {
 
 .brand img {
   width: auto;
-  height: 72px;
+  height: 56px;
   object-fit: contain;
 }
 
@@ -161,9 +161,9 @@ nav {
 }
 
 .hero-logo {
-  height: min(42svh, 430px);
-  width: auto;
-  max-width: 82vw;
+  width: min(560px, 82vw);
+  height: auto;
+  max-height: 30svh;
   margin: 0 0 clamp(16px, 3.4svh, 40px);
   filter: drop-shadow(0 22px 52px rgba(0, 0, 0, 0.62));
 }
@@ -182,6 +182,8 @@ nav {
 }
 
 .eyebrow {
+  /* The eyebrow only ever runs on the paper sections, where the light tint washes out. */
+  color: var(--accent);
   margin-bottom: 22px;
 }
 
@@ -285,11 +287,11 @@ nav {
    read as cut apart rather than overlapped. */
 .job-photo {
   filter: saturate(0.86) contrast(1.08) brightness(0.84);
-  box-shadow: -1px 0 0 rgba(88, 149, 228, 0.5), -26px 0 54px -20px rgba(0, 0, 0, 0.8);
+  box-shadow: -1px 0 0 rgba(76, 141, 255, 0.5), -26px 0 54px -20px rgba(0, 0, 0, 0.8);
 }
 
 .job.flip .job-photo {
-  box-shadow: 1px 0 0 rgba(88, 149, 228, 0.5), 26px 0 54px -20px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 0 0 rgba(76, 141, 255, 0.5), 26px 0 54px -20px rgba(0, 0, 0, 0.8);
 }
 
 .job-ground {
@@ -398,7 +400,7 @@ nav {
   background: var(--soil);
   color: rgba(230, 236, 242, 0.58);
   padding: 34px 0;
-  border-top: 1px solid rgba(88, 149, 228, 0.18);
+  border-top: 1px solid rgba(76, 141, 255, 0.18);
 }
 
 .foot .wrap {
@@ -410,7 +412,7 @@ nav {
 
 .foot img {
   width: auto;
-  height: clamp(78px, 8vw, 112px);
+  height: clamp(46px, 4.4vw, 62px);
   margin: 0;
   object-fit: contain;
 }
@@ -436,7 +438,7 @@ nav {
 
   .brand img {
     width: auto;
-    height: 58px;
+    height: 44px;
   }
 
   .nav-call {
@@ -450,8 +452,8 @@ nav {
   }
 
   .hero-logo {
-    height: min(34svh, 300px);
-    max-width: 74vw;
+    width: min(420px, 84vw);
+    max-height: 24svh;
     margin-bottom: clamp(14px, 2.8svh, 30px);
   }
 
@@ -515,7 +517,8 @@ nav {
 
 @media (max-width: 620px) {
   .hero-logo {
-    height: min(26svh, 240px);
+    width: min(340px, 84vw);
+    max-height: 20svh;
   }
 
   .phone {
