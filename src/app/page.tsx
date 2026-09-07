@@ -85,7 +85,7 @@ export default function Home() {
             </h1>
             <p className="tag">Benton, Arkansas</p>
             <p className="lede">
-              Excavation, drainage, clearing, grading, and site prep across Arkansas.
+              Excavation, drainage, clearing, grading, and site prep across Arkansas
             </p>
             <div className="actions">
               <a className="plate" href={TEL}>
