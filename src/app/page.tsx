@@ -127,7 +127,7 @@ export default function Home() {
             </div>
             <div className="proof-copy">
               <p>
-                You work directly with Chase. The scope is clear, the price is clear,
+                You work directly with Chase Malone. The scope is clear, the price is clear,
                 and if the ground changes the conversation happens before the work does.
               </p>
               <p>
