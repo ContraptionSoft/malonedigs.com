@@ -91,7 +91,7 @@ p {
 }
 
 .brand img {
-  width: 72px;
+  width: auto;
   height: 72px;
   object-fit: contain;
 }
@@ -406,7 +406,7 @@ nav {
 }
 
 .foot img {
-  width: 58px;
+  width: auto;
   height: 58px;
   object-fit: contain;
 }
@@ -431,7 +431,7 @@ nav {
   }
 
   .brand img {
-    width: 58px;
+    width: auto;
     height: 58px;
   }
 

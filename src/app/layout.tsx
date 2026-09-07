@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.png",
+        url: "/logo-social.png",
         width: 1024,
         height: 1024,
         alt: "Malone Excavation",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "Malone Excavation | Benton, Arkansas",
     description:
       "Owner-operated excavation and dirt work across Arkansas. Based in Benton, AR. Call for a free estimate.",
-    images: ["/logo.png"],
+    images: ["/logo-social.png"],
   },
 };
 
@@ -104,7 +104,7 @@ export default function RootLayout({
                 name: "Arkansas",
               },
               priceRange: "$$",
-              image: "https://www.malonedigs.com/logo.png",
+              image: "https://www.malonedigs.com/logo-social.png",
               sameAs: [],
             }),
           }}
