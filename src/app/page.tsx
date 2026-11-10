@@ -58,10 +58,10 @@ export default function Home() {
           <p className="eyebrow">What we do</p>
           <h2 id="services-h">Moving dirt, solving drainage, opening sites</h2>
           <ul className="cards">
-            {services.map((s) => (
+            {services.map((s, i) => (
               <li key={s.slug}>
                 <Link className="card" href={`/services/${s.slug}`}>
-                  <Image src={s.image} alt={s.alt} width={1280} height={720} sizes="(max-width: 700px) 100vw, 360px" />
+                  <span className="card-num" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
                   <span className="card-body">
                     <span className="card-name">{s.name}</span>
                     <span className="card-short">{s.short}</span>

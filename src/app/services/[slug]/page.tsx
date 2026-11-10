@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CallButtons, Estimate } from "@/components/Estimate";
@@ -72,7 +71,14 @@ export default async function ServicePage({ params }: Props) {
             <p className="lede">{s.intro}</p>
             <CallButtons />
           </div>
-          <Image className="svc-photo" src={s.image} alt={s.alt} width={1280} height={720} sizes="(max-width: 820px) 100vw, 520px" priority />
+          <aside className="svc-facts" aria-label="At a glance">
+            <ul>
+              <li>Free estimates</li>
+              <li>Owner-operated by Chase Malone</li>
+              <li>Based in Benton, Arkansas</li>
+              <li>Job sites across Arkansas</li>
+            </ul>
+          </aside>
         </div>
       </section>
 

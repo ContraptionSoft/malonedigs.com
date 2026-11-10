@@ -15,7 +15,7 @@ Use the `release` skill before every push.
 
 ### Changed
 - Full redesign: red-dirt accent next to the blue logo, a real text headline over the cab footage, and service cards on the home page
-- Every photo on the site is now from Chase's own cab footage. The stock photos are gone
+- The stock photos are gone. Chase's own cab footage plays at the top of the home page
 - Pages load much faster on phones: no scroll animation library, and the hero video is a third of the size
 
 ### Fixed

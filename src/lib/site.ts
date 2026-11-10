@@ -12,8 +12,6 @@ export type Service = {
   /** Page title fragment, phrased the way people search. */
   title: string;
   short: string;
-  image: string;
-  alt: string;
   intro: string;
   signs: { heading: string; items: string[] };
   body: { heading: string; text: string }[];
@@ -28,8 +26,6 @@ export const services: Service[] = [
     name: "French drains",
     title: "French Drains in Benton, AR",
     short: "Get standing water away from your house, yard, and driveway.",
-    image: "/jobs/cab-13.jpg",
-    alt: "Excavator bucket cutting a trench in red clay, seen from the cab",
     intro:
       "A French drain is a trench with perforated pipe and gravel that catches water underground and carries it somewhere it can't hurt anything. Arkansas clay holds water instead of soaking it up, so a yard that ponds after every rain usually keeps ponding until the water has a way out.",
     signs: {
@@ -67,8 +63,6 @@ export const services: Service[] = [
     name: "Septic digging",
     title: "Septic Digging in Benton, AR",
     short: "Excavation for septic tanks and field lines.",
-    image: "/jobs/cab-10.jpg",
-    alt: "Excavator bucket lifting red dirt out of a deep cut",
     intro:
       "Septic digging is the excavation side of a septic job: the hole for the tank and the trenches for the field lines. It has to be dug to the depths and layout the system calls for, in ground that doesn't always want to cooperate.",
     signs: {
@@ -106,8 +100,6 @@ export const services: Service[] = [
     name: "Land clearing",
     title: "Land Clearing in Benton & Saline County, AR",
     short: "Trees, brush, and stumps off the ground you want to use.",
-    image: "/jobs/cab-1.jpg",
-    alt: "Excavator working a cleared lot with trees along the edge",
     intro:
       "Clearing takes overgrown or wooded ground and makes it usable for a house pad, a driveway, a shop, a pasture, or just a yard you can walk across. A lot of land in Saline County hasn't been touched in decades, and the brush shows it.",
     signs: {
@@ -145,8 +137,6 @@ export const services: Service[] = [
     name: "Grading & pad work",
     title: "Grading & Building Pads in Benton, AR",
     short: "Level pads and the right slope so water runs away, not toward.",
-    image: "/jobs/cab-19.jpg",
-    alt: "View from the excavator cab across a freshly graded red dirt lot",
     intro:
       "Grading shapes the ground: flat where something is going to sit, and sloped where water needs to run off. A good pad and good drainage around it save a lot of trouble later, especially on Arkansas clay.",
     signs: {
@@ -184,8 +174,6 @@ export const services: Service[] = [
     name: "Trenching",
     title: "Trenching in Benton, AR",
     short: "Trenches for water lines, power, drainage, and utilities.",
-    image: "/jobs/cab-7.jpg",
-    alt: "Excavator bucket digging a narrow trench through a cleared lot",
     intro:
       "Trenching is digging a narrow cut to a set depth so a line can be laid in it: water, electric, gas, drain pipe, or conduit. Getting the depth and the route right the first time is what keeps it from turning into a second job.",
     signs: {
@@ -223,8 +211,6 @@ export const services: Service[] = [
     name: "Site prep & land development",
     title: "Site Prep & Land Development in Arkansas",
     short: "Raw ground turned into a site that's ready to build on.",
-    image: "/jobs/cab-4.jpg",
-    alt: "An excavator loading red dirt on a lot with houses in the background",
     intro:
       "Site prep is everything between raw land and the first day of building: clearing, cutting and filling, grading, drainage, and access. On a bigger piece of land, the same work is how a property gets developed.",
     signs: {
