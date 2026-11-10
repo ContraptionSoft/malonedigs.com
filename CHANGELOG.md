@@ -6,6 +6,11 @@ Use the `release` skill before every push.
 
 ## [Unreleased]
 
+## [2.0.1] - 2026-11-10
+
+### Changed
+- New logo: the M is still two excavator arms, redrawn clean with real pins and buckets, in the header, footer, browser tab icon, phone home screen icon, and link previews
+
 ## [2.0.0] - 2026-11-10
 
 ### Added
@@ -28,6 +33,7 @@ Use the `release` skill before every push.
 
 The single-page site as it stood before the redesign (first launched April 2026).
 
-[Unreleased]: https://github.com/ContraptionSoft/malonedigs.com/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/ContraptionSoft/malonedigs.com/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/ContraptionSoft/malonedigs.com/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/ContraptionSoft/malonedigs.com/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/ContraptionSoft/malonedigs.com/releases/tag/v1.0.0

@@ -83,7 +83,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <header className="bar">
           <div className="wrap">
             <Link className="brand" href="/" aria-label="Malone Excavation home">
-              <Image src="/logo-light.png" alt="" width={1581} height={626} sizes="160px" priority />
+              <Image src="/logo-white.svg" alt="" width={737} height={154} priority unoptimized />
             </Link>
             <nav aria-label="Primary">
               <Link className="nav-link" href="/#services">
@@ -101,7 +101,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <footer className="foot">
           <div className="wrap foot-grid">
             <div>
-              <Image src="/logo-light.png" alt="Malone Excavation" width={1581} height={626} sizes="180px" />
+              <Image src="/logo-white.svg" alt="Malone Excavation" width={737} height={154} unoptimized />
               <p>Owner-operated excavation and dirt work. Based in Benton, Arkansas.</p>
               <p>
                 <a href={TEL}>{PHONE}</a>
