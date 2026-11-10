@@ -6,6 +6,17 @@ export const TEL = "tel:+18708830599";
 export const SMS = "sms:+18708830599?&body=Hi%20Chase%2C%20I%20found%20you%20on%20malonedigs.com.%20Here%27s%20the%20job%3A";
 export const AREA = "Benton, Saline County, and job sites across Arkansas";
 
+export type Photo = { src: string; alt: string; width: number; height: number };
+
+// Chase's own job photos. Location data stripped on import.
+export const PHOTOS = {
+  loader: { src: "/work/loader-gravel.jpg", alt: "View from the loader cab with a bucket of gravel, crossing a job site toward a spoil pile and a service truck", width: 1200, height: 1600 },
+  tanksClose: { src: "/work/septic-tanks-close.jpg", alt: "Concrete septic tanks with green lids set in a fresh excavation next to a new building", width: 1600, height: 1200 },
+  tanksRow: { src: "/work/septic-tanks-row.jpg", alt: "Four concrete septic tanks set side by side in a red clay pit, with tools and a laser level on site", width: 1600, height: 966 },
+  tanksWide: { src: "/work/septic-tanks-wide.jpg", alt: "Septic tanks set level in a dug pit beside a building wrapped in house wrap, with a mini excavator behind", width: 1600, height: 1200 },
+  risers: { src: "/work/septic-tank-risers.jpg", alt: "A concrete septic tank with risers and pipe set in a deep cut beside a teal block building", width: 1600, height: 1200 },
+} satisfies Record<string, Photo>;
+
 export type Service = {
   slug: string;
   name: string;
@@ -16,6 +27,8 @@ export type Service = {
   signs: { heading: string; items: string[] };
   body: { heading: string; text: string }[];
   faq: { q: string; a: string }[];
+  /** Real job photos only. First one leads the page. */
+  photos?: Photo[];
 };
 
 // ponytail: copy says only what the old site already said about Chase plus general,
@@ -60,6 +73,7 @@ export const services: Service[] = [
   },
   {
     slug: "septic-digging",
+    photos: [PHOTOS.tanksClose, PHOTOS.tanksRow, PHOTOS.tanksWide, PHOTOS.risers],
     name: "Septic digging",
     title: "Septic Digging in Benton, AR",
     short: "Excavation for septic tanks and field lines.",
@@ -208,6 +222,7 @@ export const services: Service[] = [
   },
   {
     slug: "site-prep",
+    photos: [PHOTOS.loader],
     name: "Site prep & land development",
     title: "Site Prep & Land Development in Arkansas",
     short: "Raw ground turned into a site that's ready to build on.",

@@ -10,6 +10,7 @@ Use the `release` skill before every push.
 - A page for each service: French drains, septic digging, land clearing, grading and pad work, trenching, and site prep and land development, each with what the job involves, common reasons to call, and questions with answers
 - "Text Chase a photo" button next to every call button, which opens a text to Chase with a starter message
 - How an estimate works, in three steps, on the home page
+- Chase's own job photos: a Recent work section on the home page, septic photos on the septic page, and a job site photo on the site prep page
 - Footer with every service and the service area
 - Search details for each service page (service, FAQ, and breadcrumb data) and the new pages in the sitemap
 

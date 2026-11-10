@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CallButtons, Estimate } from "@/components/Estimate";
@@ -71,14 +72,26 @@ export default async function ServicePage({ params }: Props) {
             <p className="lede">{s.intro}</p>
             <CallButtons />
           </div>
-          <aside className="svc-facts" aria-label="At a glance">
-            <ul>
-              <li>Free estimates</li>
-              <li>Owner-operated by Chase Malone</li>
-              <li>Based in Benton, Arkansas</li>
-              <li>Job sites across Arkansas</li>
-            </ul>
-          </aside>
+          {s.photos ? (
+            <Image
+              className="svc-photo"
+              src={s.photos[0].src}
+              alt={s.photos[0].alt}
+              width={s.photos[0].width}
+              height={s.photos[0].height}
+              sizes="(max-width: 900px) 100vw, 480px"
+              priority
+            />
+          ) : (
+            <aside className="svc-facts" aria-label="At a glance">
+              <ul>
+                <li>Free estimates</li>
+                <li>Owner-operated by Chase Malone</li>
+                <li>Based in Benton, Arkansas</li>
+                <li>Job sites across Arkansas</li>
+              </ul>
+            </aside>
+          )}
         </div>
       </section>
 
@@ -102,6 +115,21 @@ export default async function ServicePage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {s.photos && s.photos.length > 1 && (
+        <section className="section section-dark" aria-labelledby="photos-h">
+          <div className="wrap">
+            <h2 id="photos-h" className="small-h">From Chase&rsquo;s job sites</h2>
+            <ul className="shots">
+              {s.photos.slice(1).map((p) => (
+                <li key={p.src}>
+                  <Image src={p.src} alt={p.alt} width={p.width} height={p.height} sizes="(max-width: 620px) 100vw, 380px" />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       <section className="section section-tint" aria-labelledby="faq-h">
         <div className="wrap">

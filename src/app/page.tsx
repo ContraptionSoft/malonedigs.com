@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CallButtons, Estimate } from "@/components/Estimate";
-import { services } from "@/lib/site";
+import { PHOTOS, services } from "@/lib/site";
+
+const work = [PHOTOS.loader, PHOTOS.tanksClose, PHOTOS.risers, PHOTOS.tanksRow, PHOTOS.tanksWide];
 
 const steps = [
   {
@@ -71,6 +73,26 @@ export default function Home() {
             ))}
           </ul>
           <p className="also">Also: general dirt work. If it involves moving dirt, call and ask.</p>
+        </div>
+      </section>
+
+      <section className="section section-tint" aria-labelledby="work-h">
+        <div className="wrap">
+          <p className="eyebrow">Recent work</p>
+          <h2 id="work-h">From Chase&rsquo;s job sites</h2>
+          <ul className="work">
+            {work.map((p, i) => (
+              <li key={p.src} className={i === 0 ? "work-tall" : undefined}>
+                <Image
+                  src={p.src}
+                  alt={p.alt}
+                  width={p.width}
+                  height={p.height}
+                  sizes="(max-width: 620px) 50vw, 380px"
+                />
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

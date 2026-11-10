@@ -352,6 +352,42 @@ ol {
   color: var(--muted);
 }
 
+/* Recent work: one tall cab shot beside a 2x2 of finished septic sets */
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: clamp(180px, 20vw, 260px);
+  gap: 14px;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.work-tall {
+  grid-row: span 2;
+}
+
+.work img,
+.shots img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.shots img {
+  aspect-ratio: 4 / 3;
+}
+
 /* Why */
 
 .why {
@@ -474,6 +510,13 @@ ol {
 
 .crumbs a:hover {
   color: var(--clay-hi);
+}
+
+.svc-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .svc-facts {
@@ -660,6 +703,10 @@ ol {
   .foot-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .work {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 620px) {
@@ -702,7 +749,12 @@ ol {
   }
 
   .foot-grid,
-  .faqs {
+  .faqs,
+  .shots {
     grid-template-columns: 1fr;
+  }
+
+  .work {
+    grid-auto-rows: 220px;
   }
 }
