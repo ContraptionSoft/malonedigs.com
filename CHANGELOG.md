@@ -6,6 +6,8 @@ Use the `release` skill before every push.
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-11-10
+
 ### Added
 - A page for each service: French drains, septic digging, land clearing, grading and pad work, trenching, and site prep and land development, each with what the job involves, common reasons to call, and questions with answers
 - "Text Chase a photo" button next to every call button, which opens a text to Chase with a starter message
@@ -26,5 +28,6 @@ Use the `release` skill before every push.
 
 The single-page site as it stood before the redesign (first launched April 2026).
 
-[Unreleased]: https://github.com/ContraptionSoft/malonedigs.com/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/ContraptionSoft/malonedigs.com/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/ContraptionSoft/malonedigs.com/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/ContraptionSoft/malonedigs.com/releases/tag/v1.0.0
