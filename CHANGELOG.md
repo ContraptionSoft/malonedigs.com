@@ -6,6 +6,9 @@ Use the `release` skill before every push.
 
 ## [Unreleased]
 
+### Fixed
+- On phones, the tall loader cab photo in Recent work gets its own full-width row instead of being squeezed beside the others
+
 ## [2.0.1] - 2026-11-10
 
 ### Changed
