@@ -6,6 +6,8 @@ Use the `release` skill before every push.
 
 ## [Unreleased]
 
+## [2.0.2] - 2026-11-11
+
 ### Fixed
 - On phones, the tall loader cab photo in Recent work gets its own full-width row instead of being squeezed beside the others
 
@@ -36,7 +38,8 @@ Use the `release` skill before every push.
 
 The single-page site as it stood before the redesign (first launched April 2026).
 
-[Unreleased]: https://github.com/ContraptionSoft/malonedigs.com/compare/v2.0.1...HEAD
+[Unreleased]: https://github.com/ContraptionSoft/malonedigs.com/compare/v2.0.2...HEAD
+[2.0.2]: https://github.com/ContraptionSoft/malonedigs.com/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/ContraptionSoft/malonedigs.com/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/ContraptionSoft/malonedigs.com/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/ContraptionSoft/malonedigs.com/releases/tag/v1.0.0
