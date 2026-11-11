@@ -757,4 +757,8 @@ ol {
   .work {
     grid-auto-rows: 220px;
   }
+
+  .work-tall {
+    grid-column: 1 / -1;
+  }
 }
